@@ -1,0 +1,4517 @@
+type Query {
+  findFirstAvailableHomeGameTime(where: AvailableHomeGameTimeWhereInput, orderBy: [AvailableHomeGameTimeOrderByWithRelationInput!], cursor: AvailableHomeGameTimeWhereUniqueInput, take: Int, skip: Int, distinct: [AvailableHomeGameTimeScalarFieldEnum!]): AvailableHomeGameTime
+  findFirstAvailableHomeGameTimeOrThrow(where: AvailableHomeGameTimeWhereInput, orderBy: [AvailableHomeGameTimeOrderByWithRelationInput!], cursor: AvailableHomeGameTimeWhereUniqueInput, take: Int, skip: Int, distinct: [AvailableHomeGameTimeScalarFieldEnum!]): AvailableHomeGameTime
+  availableHomeGameTimes(where: AvailableHomeGameTimeWhereInput, orderBy: [AvailableHomeGameTimeOrderByWithRelationInput!], cursor: AvailableHomeGameTimeWhereUniqueInput, take: Int, skip: Int, distinct: [AvailableHomeGameTimeScalarFieldEnum!]): [AvailableHomeGameTime!]!
+  availableHomeGameTime(where: AvailableHomeGameTimeWhereUniqueInput!): AvailableHomeGameTime
+  getAvailableHomeGameTime(where: AvailableHomeGameTimeWhereUniqueInput!): AvailableHomeGameTime
+  findFirstClub(where: ClubWhereInput, orderBy: [ClubOrderByWithRelationInput!], cursor: ClubWhereUniqueInput, take: Int, skip: Int, distinct: [ClubScalarFieldEnum!]): Club
+  findFirstClubOrThrow(where: ClubWhereInput, orderBy: [ClubOrderByWithRelationInput!], cursor: ClubWhereUniqueInput, take: Int, skip: Int, distinct: [ClubScalarFieldEnum!]): Club
+  clubs(where: ClubWhereInput, orderBy: [ClubOrderByWithRelationInput!], cursor: ClubWhereUniqueInput, take: Int, skip: Int, distinct: [ClubScalarFieldEnum!]): [Club!]!
+  club(where: ClubWhereUniqueInput!): Club
+  getClub(where: ClubWhereUniqueInput!): Club
+  findFirstClubBadge(where: ClubBadgeWhereInput, orderBy: [ClubBadgeOrderByWithRelationInput!], cursor: ClubBadgeWhereUniqueInput, take: Int, skip: Int, distinct: [ClubBadgeScalarFieldEnum!]): ClubBadge
+  findFirstClubBadgeOrThrow(where: ClubBadgeWhereInput, orderBy: [ClubBadgeOrderByWithRelationInput!], cursor: ClubBadgeWhereUniqueInput, take: Int, skip: Int, distinct: [ClubBadgeScalarFieldEnum!]): ClubBadge
+  clubBadges(where: ClubBadgeWhereInput, orderBy: [ClubBadgeOrderByWithRelationInput!], cursor: ClubBadgeWhereUniqueInput, take: Int, skip: Int, distinct: [ClubBadgeScalarFieldEnum!]): [ClubBadge!]!
+  clubBadge(where: ClubBadgeWhereUniqueInput!): ClubBadge
+  getClubBadge(where: ClubBadgeWhereUniqueInput!): ClubBadge
+  findFirstClubFixture(where: ClubFixtureWhereInput, orderBy: [ClubFixtureOrderByWithRelationInput!], cursor: ClubFixtureWhereUniqueInput, take: Int, skip: Int, distinct: [ClubFixtureScalarFieldEnum!]): ClubFixture
+  findFirstClubFixtureOrThrow(where: ClubFixtureWhereInput, orderBy: [ClubFixtureOrderByWithRelationInput!], cursor: ClubFixtureWhereUniqueInput, take: Int, skip: Int, distinct: [ClubFixtureScalarFieldEnum!]): ClubFixture
+  clubFixtures(where: ClubFixtureWhereInput, orderBy: [ClubFixtureOrderByWithRelationInput!], cursor: ClubFixtureWhereUniqueInput, take: Int, skip: Int, distinct: [ClubFixtureScalarFieldEnum!]): [ClubFixture!]!
+  clubFixture(where: ClubFixtureWhereUniqueInput!): ClubFixture
+  getClubFixture(where: ClubFixtureWhereUniqueInput!): ClubFixture
+  findFirstClubStats(where: ClubStatsWhereInput, orderBy: [ClubStatsOrderByWithRelationInput!], cursor: ClubStatsWhereUniqueInput, take: Int, skip: Int, distinct: [ClubStatsScalarFieldEnum!]): ClubStats
+  findFirstClubStatsOrThrow(where: ClubStatsWhereInput, orderBy: [ClubStatsOrderByWithRelationInput!], cursor: ClubStatsWhereUniqueInput, take: Int, skip: Int, distinct: [ClubStatsScalarFieldEnum!]): ClubStats
+  findUniqueClubStats(where: ClubStatsWhereUniqueInput!): ClubStats
+  findUniqueClubStatsOrThrow(where: ClubStatsWhereUniqueInput!): ClubStats
+  findFirstClubTournament(where: ClubTournamentWhereInput, orderBy: [ClubTournamentOrderByWithRelationInput!], cursor: ClubTournamentWhereUniqueInput, take: Int, skip: Int, distinct: [ClubTournamentScalarFieldEnum!]): ClubTournament
+  findFirstClubTournamentOrThrow(where: ClubTournamentWhereInput, orderBy: [ClubTournamentOrderByWithRelationInput!], cursor: ClubTournamentWhereUniqueInput, take: Int, skip: Int, distinct: [ClubTournamentScalarFieldEnum!]): ClubTournament
+  clubTournament(where: ClubTournamentWhereUniqueInput!): ClubTournament
+  getClubTournament(where: ClubTournamentWhereUniqueInput!): ClubTournament
+  findFirstCompetition(where: CompetitionWhereInput, orderBy: [CompetitionOrderByWithRelationInput!], cursor: CompetitionWhereUniqueInput, take: Int, skip: Int, distinct: [CompetitionScalarFieldEnum!]): Competition
+  findFirstCompetitionOrThrow(where: CompetitionWhereInput, orderBy: [CompetitionOrderByWithRelationInput!], cursor: CompetitionWhereUniqueInput, take: Int, skip: Int, distinct: [CompetitionScalarFieldEnum!]): Competition
+  competitions(where: CompetitionWhereInput, orderBy: [CompetitionOrderByWithRelationInput!], cursor: CompetitionWhereUniqueInput, take: Int, skip: Int, distinct: [CompetitionScalarFieldEnum!]): [Competition!]!
+  competition(where: CompetitionWhereUniqueInput!): Competition
+  getCompetition(where: CompetitionWhereUniqueInput!): Competition
+  findFirstDivision(where: DivisionWhereInput, orderBy: [DivisionOrderByWithRelationInput!], cursor: DivisionWhereUniqueInput, take: Int, skip: Int, distinct: [DivisionScalarFieldEnum!]): Division
+  findFirstDivisionOrThrow(where: DivisionWhereInput, orderBy: [DivisionOrderByWithRelationInput!], cursor: DivisionWhereUniqueInput, take: Int, skip: Int, distinct: [DivisionScalarFieldEnum!]): Division
+  divisions(where: DivisionWhereInput, orderBy: [DivisionOrderByWithRelationInput!], cursor: DivisionWhereUniqueInput, take: Int, skip: Int, distinct: [DivisionScalarFieldEnum!]): [Division!]!
+  division(where: DivisionWhereUniqueInput!): Division
+  getDivision(where: DivisionWhereUniqueInput!): Division
+  aggregateFixture(where: FixtureWhereInput, orderBy: [FixtureOrderByWithRelationInput!], cursor: FixtureWhereUniqueInput, take: Int, skip: Int): AggregateFixture!
+  findFirstFixture(where: FixtureWhereInput, orderBy: [FixtureOrderByWithRelationInput!], cursor: FixtureWhereUniqueInput, take: Int, skip: Int, distinct: [FixtureScalarFieldEnum!]): Fixture
+  findFirstFixtureOrThrow(where: FixtureWhereInput, orderBy: [FixtureOrderByWithRelationInput!], cursor: FixtureWhereUniqueInput, take: Int, skip: Int, distinct: [FixtureScalarFieldEnum!]): Fixture
+  fixtures(where: FixtureWhereInput, orderBy: [FixtureOrderByWithRelationInput!], cursor: FixtureWhereUniqueInput, take: Int, skip: Int, distinct: [FixtureScalarFieldEnum!]): [Fixture!]!
+  fixture(where: FixtureWhereUniqueInput!): Fixture
+  getFixture(where: FixtureWhereUniqueInput!): Fixture
+  findFirstFormation(where: FormationWhereInput, orderBy: [FormationOrderByWithRelationInput!], cursor: FormationWhereUniqueInput, take: Int, skip: Int, distinct: [FormationScalarFieldEnum!]): Formation
+  findFirstFormationOrThrow(where: FormationWhereInput, orderBy: [FormationOrderByWithRelationInput!], cursor: FormationWhereUniqueInput, take: Int, skip: Int, distinct: [FormationScalarFieldEnum!]): Formation
+  formations(where: FormationWhereInput, orderBy: [FormationOrderByWithRelationInput!], cursor: FormationWhereUniqueInput, take: Int, skip: Int, distinct: [FormationScalarFieldEnum!]): [Formation!]!
+  formation(where: FormationWhereUniqueInput!): Formation
+  getFormation(where: FormationWhereUniqueInput!): Formation
+  findFirstFormationSlot(where: FormationSlotWhereInput, orderBy: [FormationSlotOrderByWithRelationInput!], cursor: FormationSlotWhereUniqueInput, take: Int, skip: Int, distinct: [FormationSlotScalarFieldEnum!]): FormationSlot
+  findFirstFormationSlotOrThrow(where: FormationSlotWhereInput, orderBy: [FormationSlotOrderByWithRelationInput!], cursor: FormationSlotWhereUniqueInput, take: Int, skip: Int, distinct: [FormationSlotScalarFieldEnum!]): FormationSlot
+  formationSlots(where: FormationSlotWhereInput, orderBy: [FormationSlotOrderByWithRelationInput!], cursor: FormationSlotWhereUniqueInput, take: Int, skip: Int, distinct: [FormationSlotScalarFieldEnum!]): [FormationSlot!]!
+  formationSlot(where: FormationSlotWhereUniqueInput!): FormationSlot
+  getFormationSlot(where: FormationSlotWhereUniqueInput!): FormationSlot
+  findFirstKit(where: KitWhereInput, orderBy: [KitOrderByWithRelationInput!], cursor: KitWhereUniqueInput, take: Int, skip: Int, distinct: [KitScalarFieldEnum!]): Kit
+  findFirstKitOrThrow(where: KitWhereInput, orderBy: [KitOrderByWithRelationInput!], cursor: KitWhereUniqueInput, take: Int, skip: Int, distinct: [KitScalarFieldEnum!]): Kit
+  kits(where: KitWhereInput, orderBy: [KitOrderByWithRelationInput!], cursor: KitWhereUniqueInput, take: Int, skip: Int, distinct: [KitScalarFieldEnum!]): [Kit!]!
+  kit(where: KitWhereUniqueInput!): Kit
+  getKit(where: KitWhereUniqueInput!): Kit
+  findFirstLineup(where: LineupWhereInput, orderBy: [LineupOrderByWithRelationInput!], cursor: LineupWhereUniqueInput, take: Int, skip: Int, distinct: [LineupScalarFieldEnum!]): Lineup
+  findFirstLineupOrThrow(where: LineupWhereInput, orderBy: [LineupOrderByWithRelationInput!], cursor: LineupWhereUniqueInput, take: Int, skip: Int, distinct: [LineupScalarFieldEnum!]): Lineup
+  lineups(where: LineupWhereInput, orderBy: [LineupOrderByWithRelationInput!], cursor: LineupWhereUniqueInput, take: Int, skip: Int, distinct: [LineupScalarFieldEnum!]): [Lineup!]!
+  lineup(where: LineupWhereUniqueInput!): Lineup
+  getLineup(where: LineupWhereUniqueInput!): Lineup
+  findFirstMatch(where: MatchWhereInput, orderBy: [MatchOrderByWithRelationInput!], cursor: MatchWhereUniqueInput, take: Int, skip: Int, distinct: [MatchScalarFieldEnum!]): Match
+  findFirstMatchOrThrow(where: MatchWhereInput, orderBy: [MatchOrderByWithRelationInput!], cursor: MatchWhereUniqueInput, take: Int, skip: Int, distinct: [MatchScalarFieldEnum!]): Match
+  match(where: MatchWhereUniqueInput!): Match
+  getMatch(where: MatchWhereUniqueInput!): Match
+  findFirstMatchChange(where: MatchChangeWhereInput, orderBy: [MatchChangeOrderByWithRelationInput!], cursor: MatchChangeWhereUniqueInput, take: Int, skip: Int, distinct: [MatchChangeScalarFieldEnum!]): MatchChange
+  findFirstMatchChangeOrThrow(where: MatchChangeWhereInput, orderBy: [MatchChangeOrderByWithRelationInput!], cursor: MatchChangeWhereUniqueInput, take: Int, skip: Int, distinct: [MatchChangeScalarFieldEnum!]): MatchChange
+  matchChanges(where: MatchChangeWhereInput, orderBy: [MatchChangeOrderByWithRelationInput!], cursor: MatchChangeWhereUniqueInput, take: Int, skip: Int, distinct: [MatchChangeScalarFieldEnum!]): [MatchChange!]!
+  matchChange(where: MatchChangeWhereUniqueInput!): MatchChange
+  getMatchChange(where: MatchChangeWhereUniqueInput!): MatchChange
+  findFirstMatchConfiguration(where: MatchConfigurationWhereInput, orderBy: [MatchConfigurationOrderByWithRelationInput!], cursor: MatchConfigurationWhereUniqueInput, take: Int, skip: Int, distinct: [MatchConfigurationScalarFieldEnum!]): MatchConfiguration
+  findFirstMatchConfigurationOrThrow(where: MatchConfigurationWhereInput, orderBy: [MatchConfigurationOrderByWithRelationInput!], cursor: MatchConfigurationWhereUniqueInput, take: Int, skip: Int, distinct: [MatchConfigurationScalarFieldEnum!]): MatchConfiguration
+  matchConfigurations(where: MatchConfigurationWhereInput, orderBy: [MatchConfigurationOrderByWithRelationInput!], cursor: MatchConfigurationWhereUniqueInput, take: Int, skip: Int, distinct: [MatchConfigurationScalarFieldEnum!]): [MatchConfiguration!]!
+  matchConfiguration(where: MatchConfigurationWhereUniqueInput!): MatchConfiguration
+  getMatchConfiguration(where: MatchConfigurationWhereUniqueInput!): MatchConfiguration
+  findFirstMerkleRoot(where: MerkleRootWhereInput, orderBy: [MerkleRootOrderByWithRelationInput!], cursor: MerkleRootWhereUniqueInput, take: Int, skip: Int, distinct: [MerkleRootScalarFieldEnum!]): MerkleRoot
+  findFirstMerkleRootOrThrow(where: MerkleRootWhereInput, orderBy: [MerkleRootOrderByWithRelationInput!], cursor: MerkleRootWhereUniqueInput, take: Int, skip: Int, distinct: [MerkleRootScalarFieldEnum!]): MerkleRoot
+  merkleRoots(where: MerkleRootWhereInput, orderBy: [MerkleRootOrderByWithRelationInput!], cursor: MerkleRootWhereUniqueInput, take: Int, skip: Int, distinct: [MerkleRootScalarFieldEnum!]): [MerkleRoot!]!
+  merkleRoot(where: MerkleRootWhereUniqueInput!): MerkleRoot
+  getMerkleRoot(where: MerkleRootWhereUniqueInput!): MerkleRoot
+  findFirstMetadata(where: MetadataWhereInput, orderBy: [MetadataOrderByWithRelationInput!], cursor: MetadataWhereUniqueInput, take: Int, skip: Int, distinct: [MetadataScalarFieldEnum!]): Metadata
+  findFirstMetadataOrThrow(where: MetadataWhereInput, orderBy: [MetadataOrderByWithRelationInput!], cursor: MetadataWhereUniqueInput, take: Int, skip: Int, distinct: [MetadataScalarFieldEnum!]): Metadata
+  findUniqueMetadata(where: MetadataWhereUniqueInput!): Metadata
+  findUniqueMetadataOrThrow(where: MetadataWhereUniqueInput!): Metadata
+  findFirstOwner(where: OwnerWhereInput, orderBy: [OwnerOrderByWithRelationInput!], cursor: OwnerWhereUniqueInput, take: Int, skip: Int, distinct: [OwnerScalarFieldEnum!]): Owner
+  findFirstOwnerOrThrow(where: OwnerWhereInput, orderBy: [OwnerOrderByWithRelationInput!], cursor: OwnerWhereUniqueInput, take: Int, skip: Int, distinct: [OwnerScalarFieldEnum!]): Owner
+  owners(where: OwnerWhereInput, orderBy: [OwnerOrderByWithRelationInput!], cursor: OwnerWhereUniqueInput, take: Int, skip: Int, distinct: [OwnerScalarFieldEnum!]): [Owner!]!
+  owner(where: OwnerWhereUniqueInput!): Owner
+  getOwner(where: OwnerWhereUniqueInput!): Owner
+  findFirstPlayer(where: PlayerWhereInput, orderBy: [PlayerOrderByWithRelationInput!], cursor: PlayerWhereUniqueInput, take: Int, skip: Int, distinct: [PlayerScalarFieldEnum!]): Player
+  findFirstPlayerOrThrow(where: PlayerWhereInput, orderBy: [PlayerOrderByWithRelationInput!], cursor: PlayerWhereUniqueInput, take: Int, skip: Int, distinct: [PlayerScalarFieldEnum!]): Player
+  players(where: PlayerWhereInput, orderBy: [PlayerOrderByWithRelationInput!], cursor: PlayerWhereUniqueInput, take: Int, skip: Int, distinct: [PlayerScalarFieldEnum!]): [Player!]!
+  player(where: PlayerWhereUniqueInput!): Player
+  getPlayer(where: PlayerWhereUniqueInput!): Player
+  findFirstPlayerAttributes(where: PlayerAttributesWhereInput, orderBy: [PlayerAttributesOrderByWithRelationInput!], cursor: PlayerAttributesWhereUniqueInput, take: Int, skip: Int, distinct: [PlayerAttributesScalarFieldEnum!]): PlayerAttributes
+  findFirstPlayerAttributesOrThrow(where: PlayerAttributesWhereInput, orderBy: [PlayerAttributesOrderByWithRelationInput!], cursor: PlayerAttributesWhereUniqueInput, take: Int, skip: Int, distinct: [PlayerAttributesScalarFieldEnum!]): PlayerAttributes
+  findUniquePlayerAttributes(where: PlayerAttributesWhereUniqueInput!): PlayerAttributes
+  findUniquePlayerAttributesOrThrow(where: PlayerAttributesWhereUniqueInput!): PlayerAttributes
+  findFirstPlayerLineup(where: PlayerLineupWhereInput, orderBy: [PlayerLineupOrderByWithRelationInput!], cursor: PlayerLineupWhereUniqueInput, take: Int, skip: Int, distinct: [PlayerLineupScalarFieldEnum!]): PlayerLineup
+  findFirstPlayerLineupOrThrow(where: PlayerLineupWhereInput, orderBy: [PlayerLineupOrderByWithRelationInput!], cursor: PlayerLineupWhereUniqueInput, take: Int, skip: Int, distinct: [PlayerLineupScalarFieldEnum!]): PlayerLineup
+  playerLineups(where: PlayerLineupWhereInput, orderBy: [PlayerLineupOrderByWithRelationInput!], cursor: PlayerLineupWhereUniqueInput, take: Int, skip: Int, distinct: [PlayerLineupScalarFieldEnum!]): [PlayerLineup!]!
+  playerLineup(where: PlayerLineupWhereUniqueInput!): PlayerLineup
+  getPlayerLineup(where: PlayerLineupWhereUniqueInput!): PlayerLineup
+  findFirstPlayerRegistration(where: PlayerRegistrationWhereInput, orderBy: [PlayerRegistrationOrderByWithRelationInput!], cursor: PlayerRegistrationWhereUniqueInput, take: Int, skip: Int, distinct: [PlayerRegistrationScalarFieldEnum!]): PlayerRegistration
+  findFirstPlayerRegistrationOrThrow(where: PlayerRegistrationWhereInput, orderBy: [PlayerRegistrationOrderByWithRelationInput!], cursor: PlayerRegistrationWhereUniqueInput, take: Int, skip: Int, distinct: [PlayerRegistrationScalarFieldEnum!]): PlayerRegistration
+  playerRegistrations(where: PlayerRegistrationWhereInput, orderBy: [PlayerRegistrationOrderByWithRelationInput!], cursor: PlayerRegistrationWhereUniqueInput, take: Int, skip: Int, distinct: [PlayerRegistrationScalarFieldEnum!]): [PlayerRegistration!]!
+  playerRegistration(where: PlayerRegistrationWhereUniqueInput!): PlayerRegistration
+  getPlayerRegistration(where: PlayerRegistrationWhereUniqueInput!): PlayerRegistration
+  findFirstPositionalRating(where: PositionalRatingWhereInput, orderBy: [PositionalRatingOrderByWithRelationInput!], cursor: PositionalRatingWhereUniqueInput, take: Int, skip: Int, distinct: [PositionalRatingScalarFieldEnum!]): PositionalRating
+  findFirstPositionalRatingOrThrow(where: PositionalRatingWhereInput, orderBy: [PositionalRatingOrderByWithRelationInput!], cursor: PositionalRatingWhereUniqueInput, take: Int, skip: Int, distinct: [PositionalRatingScalarFieldEnum!]): PositionalRating
+  positionalRatings(where: PositionalRatingWhereInput, orderBy: [PositionalRatingOrderByWithRelationInput!], cursor: PositionalRatingWhereUniqueInput, take: Int, skip: Int, distinct: [PositionalRatingScalarFieldEnum!]): [PositionalRating!]!
+  positionalRating(where: PositionalRatingWhereUniqueInput!): PositionalRating
+  getPositionalRating(where: PositionalRatingWhereUniqueInput!): PositionalRating
+  findFirstPrize(where: PrizeWhereInput, orderBy: [PrizeOrderByWithRelationInput!], cursor: PrizeWhereUniqueInput, take: Int, skip: Int, distinct: [PrizeScalarFieldEnum!]): Prize
+  prizes(where: PrizeWhereInput, orderBy: [PrizeOrderByWithRelationInput!], cursor: PrizeWhereUniqueInput, take: Int, skip: Int, distinct: [PrizeScalarFieldEnum!]): [Prize!]!
+  prize(where: PrizeWhereUniqueInput!): Prize
+  findFirstPrizeAssignment(where: PrizeAssignmentWhereInput, orderBy: [PrizeAssignmentOrderByWithRelationInput!], cursor: PrizeAssignmentWhereUniqueInput, take: Int, skip: Int, distinct: [PrizeAssignmentScalarFieldEnum!]): PrizeAssignment
+  findFirstPrizeAssignmentOrThrow(where: PrizeAssignmentWhereInput, orderBy: [PrizeAssignmentOrderByWithRelationInput!], cursor: PrizeAssignmentWhereUniqueInput, take: Int, skip: Int, distinct: [PrizeAssignmentScalarFieldEnum!]): PrizeAssignment
+  prizeAssignments(where: PrizeAssignmentWhereInput, orderBy: [PrizeAssignmentOrderByWithRelationInput!], cursor: PrizeAssignmentWhereUniqueInput, take: Int, skip: Int, distinct: [PrizeAssignmentScalarFieldEnum!]): [PrizeAssignment!]!
+  prizeAssignment(where: PrizeAssignmentWhereUniqueInput!): PrizeAssignment
+  getPrizeAssignment(where: PrizeAssignmentWhereUniqueInput!): PrizeAssignment
+  findFirstPrizeClaim(where: PrizeClaimWhereInput, orderBy: [PrizeClaimOrderByWithRelationInput!], cursor: PrizeClaimWhereUniqueInput, take: Int, skip: Int, distinct: [PrizeClaimScalarFieldEnum!]): PrizeClaim
+  prizeClaims(where: PrizeClaimWhereInput, orderBy: [PrizeClaimOrderByWithRelationInput!], cursor: PrizeClaimWhereUniqueInput, take: Int, skip: Int, distinct: [PrizeClaimScalarFieldEnum!]): [PrizeClaim!]!
+  prizeClaim(where: PrizeClaimWhereUniqueInput!): PrizeClaim
+  prizeValues(where: PrizeValueWhereInput, orderBy: [PrizeValueOrderByWithRelationInput!], cursor: PrizeValueWhereUniqueInput, take: Int, skip: Int, distinct: [PrizeValueScalarFieldEnum!]): [PrizeValue!]!
+  prizeValue(where: PrizeValueWhereUniqueInput!): PrizeValue
+  findFirstPromotionSelector(where: PromotionSelectorWhereInput, orderBy: [PromotionSelectorOrderByWithRelationInput!], cursor: PromotionSelectorWhereUniqueInput, take: Int, skip: Int, distinct: [PromotionSelectorScalarFieldEnum!]): PromotionSelector
+  findFirstPromotionSelectorOrThrow(where: PromotionSelectorWhereInput, orderBy: [PromotionSelectorOrderByWithRelationInput!], cursor: PromotionSelectorWhereUniqueInput, take: Int, skip: Int, distinct: [PromotionSelectorScalarFieldEnum!]): PromotionSelector
+  promotionSelectors(where: PromotionSelectorWhereInput, orderBy: [PromotionSelectorOrderByWithRelationInput!], cursor: PromotionSelectorWhereUniqueInput, take: Int, skip: Int, distinct: [PromotionSelectorScalarFieldEnum!]): [PromotionSelector!]!
+  promotionSelector(where: PromotionSelectorWhereUniqueInput!): PromotionSelector
+  getPromotionSelector(where: PromotionSelectorWhereUniqueInput!): PromotionSelector
+  findFirstRegistrationWindow(where: RegistrationWindowWhereInput, orderBy: [RegistrationWindowOrderByWithRelationInput!], cursor: RegistrationWindowWhereUniqueInput, take: Int, skip: Int, distinct: [RegistrationWindowScalarFieldEnum!]): RegistrationWindow
+  findFirstRegistrationWindowOrThrow(where: RegistrationWindowWhereInput, orderBy: [RegistrationWindowOrderByWithRelationInput!], cursor: RegistrationWindowWhereUniqueInput, take: Int, skip: Int, distinct: [RegistrationWindowScalarFieldEnum!]): RegistrationWindow
+  registrationWindows(where: RegistrationWindowWhereInput, orderBy: [RegistrationWindowOrderByWithRelationInput!], cursor: RegistrationWindowWhereUniqueInput, take: Int, skip: Int, distinct: [RegistrationWindowScalarFieldEnum!]): [RegistrationWindow!]!
+  registrationWindow(where: RegistrationWindowWhereUniqueInput!): RegistrationWindow
+  getRegistrationWindow(where: RegistrationWindowWhereUniqueInput!): RegistrationWindow
+  findFirstSeason(where: SeasonWhereInput, orderBy: [SeasonOrderByWithRelationInput!], cursor: SeasonWhereUniqueInput, take: Int, skip: Int, distinct: [SeasonScalarFieldEnum!]): Season
+  findFirstSeasonOrThrow(where: SeasonWhereInput, orderBy: [SeasonOrderByWithRelationInput!], cursor: SeasonWhereUniqueInput, take: Int, skip: Int, distinct: [SeasonScalarFieldEnum!]): Season
+  seasons(where: SeasonWhereInput, orderBy: [SeasonOrderByWithRelationInput!], cursor: SeasonWhereUniqueInput, take: Int, skip: Int, distinct: [SeasonScalarFieldEnum!]): [Season!]!
+  season(where: SeasonWhereUniqueInput!): Season
+  getSeason(where: SeasonWhereUniqueInput!): Season
+  findFirstStadium(where: StadiumWhereInput, orderBy: [StadiumOrderByWithRelationInput!], cursor: StadiumWhereUniqueInput, take: Int, skip: Int, distinct: [StadiumScalarFieldEnum!]): Stadium
+  findFirstStadiumOrThrow(where: StadiumWhereInput, orderBy: [StadiumOrderByWithRelationInput!], cursor: StadiumWhereUniqueInput, take: Int, skip: Int, distinct: [StadiumScalarFieldEnum!]): Stadium
+  stadiums(where: StadiumWhereInput, orderBy: [StadiumOrderByWithRelationInput!], cursor: StadiumWhereUniqueInput, take: Int, skip: Int, distinct: [StadiumScalarFieldEnum!]): [Stadium!]!
+  stadium(where: StadiumWhereUniqueInput!): Stadium
+  getStadium(where: StadiumWhereUniqueInput!): Stadium
+  findFirstStadiumStand(where: StadiumStandWhereInput, orderBy: [StadiumStandOrderByWithRelationInput!], cursor: StadiumStandWhereUniqueInput, take: Int, skip: Int, distinct: [StadiumStandScalarFieldEnum!]): StadiumStand
+  findFirstStadiumStandOrThrow(where: StadiumStandWhereInput, orderBy: [StadiumStandOrderByWithRelationInput!], cursor: StadiumStandWhereUniqueInput, take: Int, skip: Int, distinct: [StadiumStandScalarFieldEnum!]): StadiumStand
+  stadiumStands(where: StadiumStandWhereInput, orderBy: [StadiumStandOrderByWithRelationInput!], cursor: StadiumStandWhereUniqueInput, take: Int, skip: Int, distinct: [StadiumStandScalarFieldEnum!]): [StadiumStand!]!
+  stadiumStand(where: StadiumStandWhereUniqueInput!): StadiumStand
+  getStadiumStand(where: StadiumStandWhereUniqueInput!): StadiumStand
+  findFirstTactics(where: TacticsWhereInput, orderBy: [TacticsOrderByWithRelationInput!], cursor: TacticsWhereUniqueInput, take: Int, skip: Int, distinct: [TacticsScalarFieldEnum!]): Tactics
+  findFirstTacticsOrThrow(where: TacticsWhereInput, orderBy: [TacticsOrderByWithRelationInput!], cursor: TacticsWhereUniqueInput, take: Int, skip: Int, distinct: [TacticsScalarFieldEnum!]): Tactics
+  findUniqueTactics(where: TacticsWhereUniqueInput!): Tactics
+  findUniqueTacticsOrThrow(where: TacticsWhereUniqueInput!): Tactics
+  findFirstTournament(where: TournamentWhereInput, orderBy: [TournamentOrderByWithRelationInput!], cursor: TournamentWhereUniqueInput, take: Int, skip: Int, distinct: [TournamentScalarFieldEnum!]): Tournament
+  findFirstTournamentOrThrow(where: TournamentWhereInput, orderBy: [TournamentOrderByWithRelationInput!], cursor: TournamentWhereUniqueInput, take: Int, skip: Int, distinct: [TournamentScalarFieldEnum!]): Tournament
+  tournaments(where: TournamentWhereInput, orderBy: [TournamentOrderByWithRelationInput!], cursor: TournamentWhereUniqueInput, take: Int, skip: Int, distinct: [TournamentScalarFieldEnum!]): [Tournament!]!
+  tournament(where: TournamentWhereUniqueInput!): Tournament
+  getTournament(where: TournamentWhereUniqueInput!): Tournament
+  findFirstTournamentResult(where: TournamentResultWhereInput, orderBy: [TournamentResultOrderByWithRelationInput!], cursor: TournamentResultWhereUniqueInput, take: Int, skip: Int, distinct: [TournamentResultScalarFieldEnum!]): TournamentResult
+  findFirstTournamentResultOrThrow(where: TournamentResultWhereInput, orderBy: [TournamentResultOrderByWithRelationInput!], cursor: TournamentResultWhereUniqueInput, take: Int, skip: Int, distinct: [TournamentResultScalarFieldEnum!]): TournamentResult
+  tournamentResults(where: TournamentResultWhereInput, orderBy: [TournamentResultOrderByWithRelationInput!], cursor: TournamentResultWhereUniqueInput, take: Int, skip: Int, distinct: [TournamentResultScalarFieldEnum!]): [TournamentResult!]!
+  tournamentResult(where: TournamentResultWhereUniqueInput!): TournamentResult
+  getTournamentResult(where: TournamentResultWhereUniqueInput!): TournamentResult
+  findFirstTrainingSlot(where: TrainingSlotWhereInput, orderBy: [TrainingSlotOrderByWithRelationInput!], cursor: TrainingSlotWhereUniqueInput, take: Int, skip: Int, distinct: [TrainingSlotScalarFieldEnum!]): TrainingSlot
+  findFirstTrainingSlotOrThrow(where: TrainingSlotWhereInput, orderBy: [TrainingSlotOrderByWithRelationInput!], cursor: TrainingSlotWhereUniqueInput, take: Int, skip: Int, distinct: [TrainingSlotScalarFieldEnum!]): TrainingSlot
+  trainingSlots(where: TrainingSlotWhereInput, orderBy: [TrainingSlotOrderByWithRelationInput!], cursor: TrainingSlotWhereUniqueInput, take: Int, skip: Int, distinct: [TrainingSlotScalarFieldEnum!]): [TrainingSlot!]!
+  trainingSlot(where: TrainingSlotWhereUniqueInput!): TrainingSlot
+  getTrainingSlot(where: TrainingSlotWhereUniqueInput!): TrainingSlot
+  serverMetadata: ServerMetadata!
+  gameState: GameState!
+  leaguePromotionRelegation: LeaguePromotionRelegation!
+  academyMerkleRootToCommit: String!
+  academyMerkleRoot: String!
+  academyPlayerMerkleProof(playerId: String!): [String!]!
+  allClubsBasicInfo(ownerAddress: String!): [BasicClubInfo!]!
+  structuredPrizes(competitionName: String!, seasonId: Float!): [PrizeStructure!]!
+  prizeClaimMerkleRootToCommit(regenerate: Boolean, contractAddress: String!): String!
+  prizeClaimMerkleRoot(contractAddress: String!): String!
+  prizeClaimMerkleProof(prizeClaimId: Float!): [String!]!
+  totalClaimValue(contractAddress: String!, ownerId: Float!): String!
+  getNextRegistrationWindowUpdate: RegistrationWindowUpdate!
+  isRegistrationWindowOpen: Boolean!
+  unregistrationLimit: Float!
+  getConfigValues(keys: [String!]!): [ConfigValueOutput!]
+  actions(where: ActionWhereInput, orderBy: [ActionOrderByWithRelationInput!], cursor: ActionWhereUniqueInput, take: Int, skip: Int, distinct: [ActionScalarFieldEnum!]): [Action!]!
+  ethereumEvents(where: EthereumEventWhereInput, orderBy: [EthereumEventOrderByWithRelationInput!], cursor: EthereumEventWhereUniqueInput, take: Int, skip: Int, distinct: [EthereumEventScalarFieldEnum!]): [EthereumEvent!]!
+  amateurClubs: [AmateurClub!]!
+  clubsFlaggedForRemoval: [ClubFlaggedForRemoval!]!
+}
+
+type AvailableHomeGameTime {
+  id: Int!
+  realWorldGameTime: String!
+  homeGameTime: Float!
+  _count: AvailableHomeGameTimeCount
+  Club(where: ClubWhereInput, orderBy: [ClubOrderByWithRelationInput!], cursor: ClubWhereUniqueInput, take: Int, skip: Int, distinct: [ClubScalarFieldEnum!]): [Club!]!
+}
+
+type AvailableHomeGameTimeCount {
+  Club(where: ClubWhereInput): Int!
+}
+
+input ClubWhereInput {
+  AND: [ClubWhereInput!]
+  OR: [ClubWhereInput!]
+  NOT: [ClubWhereInput!]
+  id: IntFilter
+  seed: StringFilter
+  abbreviation: StringFilter
+  name: StringFilter
+  city: StringFilter
+  description: StringFilter
+  pattern: StringFilter
+  colours: JsonFilter
+  ownerId: IntFilter
+  clubBadgeId: IntFilter
+  stadiumId: IntFilter
+  homeGameTimeId: IntFilter
+  lastAcademyIntake: IntFilter
+  isInactive: BoolFilter
+  fflMembershipStatus: IntFilter
+  reactivationRealTimestamp: FloatNullableFilter
+  twitterAccountName: StringNullableFilter
+  showTwitterAccountName: BoolFilter
+  owner: OwnerRelationFilter
+  clubBadge: ClubBadgeRelationFilter
+  stadium: StadiumRelationFilter
+  homeGameTime: AvailableHomeGameTimeNullableRelationFilter
+  kits: KitListRelationFilter
+  actions: ActionListRelationFilter
+  lineups: LineupListRelationFilter
+  players: PlayerListRelationFilter
+  originPlayers: PlayerListRelationFilter
+  clubTournaments: ClubTournamentListRelationFilter
+  clubFixtures: ClubFixtureListRelationFilter
+  stats: ClubStatsListRelationFilter
+  trainingSlots: TrainingSlotListRelationFilter
+  TournamentResult: TournamentResultListRelationFilter
+  PlayerRegistration: PlayerRegistrationListRelationFilter
+}
+
+input IntFilter {
+  equals: Int
+  in: [Int!]
+  notIn: [Int!]
+  lt: Int
+  lte: Int
+  gt: Int
+  gte: Int
+  not: NestedIntFilter
+}
+
+input NestedIntFilter {
+  equals: Int
+  in: [Int!]
+  notIn: [Int!]
+  lt: Int
+  lte: Int
+  gt: Int
+  gte: Int
+  not: NestedIntFilter
+}
+
+input StringFilter {
+  equals: String
+  in: [String!]
+  notIn: [String!]
+  lt: String
+  lte: String
+  gt: String
+  gte: String
+  contains: String
+  startsWith: String
+  endsWith: String
+  mode: QueryMode
+  not: NestedStringFilter
+}
+
+enum QueryMode {
+  default
+  insensitive
+}
+
+input NestedStringFilter {
+  equals: String
+  in: [String!]
+  notIn: [String!]
+  lt: String
+  lte: String
+  gt: String
+  gte: String
+  contains: String
+  startsWith: String
+  endsWith: String
+  not: NestedStringFilter
+}
+
+input JsonFilter {
+  equals: JSON
+  path: [String!]
+  string_contains: String
+  string_starts_with: String
+  string_ends_with: String
+  array_contains: JSON
+  array_starts_with: JSON
+  array_ends_with: JSON
+  lt: JSON
+  lte: JSON
+  gt: JSON
+  gte: JSON
+  not: JSON
+}
+
+"""
+The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf).
+"""
+scalar JSON
+
+input BoolFilter {
+  equals: Boolean
+  not: NestedBoolFilter
+}
+
+input NestedBoolFilter {
+  equals: Boolean
+  not: NestedBoolFilter
+}
+
+input FloatNullableFilter {
+  equals: Float
+  in: [Float!]
+  notIn: [Float!]
+  lt: Float
+  lte: Float
+  gt: Float
+  gte: Float
+  not: NestedFloatNullableFilter
+}
+
+input NestedFloatNullableFilter {
+  equals: Float
+  in: [Float!]
+  notIn: [Float!]
+  lt: Float
+  lte: Float
+  gt: Float
+  gte: Float
+  not: NestedFloatNullableFilter
+}
+
+input StringNullableFilter {
+  equals: String
+  in: [String!]
+  notIn: [String!]
+  lt: String
+  lte: String
+  gt: String
+  gte: String
+  contains: String
+  startsWith: String
+  endsWith: String
+  mode: QueryMode
+  not: NestedStringNullableFilter
+}
+
+input NestedStringNullableFilter {
+  equals: String
+  in: [String!]
+  notIn: [String!]
+  lt: String
+  lte: String
+  gt: String
+  gte: String
+  contains: String
+  startsWith: String
+  endsWith: String
+  not: NestedStringNullableFilter
+}
+
+input OwnerRelationFilter {
+  is: OwnerWhereInput
+  isNot: OwnerWhereInput
+}
+
+input OwnerWhereInput {
+  AND: [OwnerWhereInput!]
+  OR: [OwnerWhereInput!]
+  NOT: [OwnerWhereInput!]
+  id: IntFilter
+  address: StringFilter
+  isAdmin: BoolFilter
+  clubs: ClubListRelationFilter
+  players: PlayerListRelationFilter
+  TournamentResult: TournamentResultListRelationFilter
+  PrizeClaim: PrizeClaimListRelationFilter
+}
+
+input ClubListRelationFilter {
+  every: ClubWhereInput
+  some: ClubWhereInput
+  none: ClubWhereInput
+}
+
+input PlayerListRelationFilter {
+  every: PlayerWhereInput
+  some: PlayerWhereInput
+  none: PlayerWhereInput
+}
+
+input PlayerWhereInput {
+  AND: [PlayerWhereInput!]
+  OR: [PlayerWhereInput!]
+  NOT: [PlayerWhereInput!]
+  id: StringFilter
+  clubId: IntNullableFilter
+  ownerId: IntNullableFilter
+  originClubId: IntFilter
+  generationId: IntFilter
+  isAcademy: BoolFilter
+  isReserve: BoolFilter
+  isInitial: BoolFilter
+  isReward: BoolFilter
+  isTraining: BoolFilter
+  isRetired: BoolFilter
+  seed: StringFilter
+  firstName: StringFilter
+  lastName: StringFilter
+  fullName: StringFilter
+  firstSeasonId: IntFilter
+  assetId: IntNullableFilter
+  nationality: StringFilter
+  heightMeters: FloatFilter
+  potential: IntFilter
+  rarity: StringFilter
+  creationRating: FloatFilter
+  mintPrice: FloatNullableFilter
+  isPartOfAcademyMerkleTree: BoolFilter
+  merkleRoot: StringNullableFilter
+  club: ClubNullableRelationFilter
+  owner: OwnerNullableRelationFilter
+}
+
+input IntNullableFilter {
+  equals: Int
+  in: [Int!]
+  notIn: [Int!]
+  lt: Int
+  lte: Int
+  gt: Int
+  gte: Int
+  not: NestedIntNullableFilter
+}
+
+input NestedIntNullableFilter {
+  equals: Int
+  in: [Int!]
+  notIn: [Int!]
+  lt: Int
+  lte: Int
+  gt: Int
+  gte: Int
+  not: NestedIntNullableFilter
+}
+
+input FloatFilter {
+  equals: Float
+  in: [Float!]
+  notIn: [Float!]
+  lt: Float
+  lte: Float
+  gt: Float
+  gte: Float
+  not: NestedFloatFilter
+}
+
+input NestedFloatFilter {
+  equals: Float
+  in: [Float!]
+  notIn: [Float!]
+  lt: Float
+  lte: Float
+  gt: Float
+  gte: Float
+  not: NestedFloatFilter
+}
+
+input ClubNullableRelationFilter {
+  is: ClubWhereInput
+  isNot: ClubWhereInput
+}
+
+input OwnerNullableRelationFilter {
+  is: OwnerWhereInput
+  isNot: OwnerWhereInput
+}
+
+input TournamentResultListRelationFilter {
+  every: TournamentResultWhereInput
+  some: TournamentResultWhereInput
+  none: TournamentResultWhereInput
+}
+
+input TournamentResultWhereInput {
+  AND: [TournamentResultWhereInput!]
+  OR: [TournamentResultWhereInput!]
+  NOT: [TournamentResultWhereInput!]
+  id: IntFilter
+  tournamentId: IntFilter
+  seasonId: IntFilter
+  clubId: IntFilter
+  position: IntFilter
+  ownerId: IntFilter
+  isInactive: BoolFilter
+  isPrizeEligible: BoolFilter
+  createdAt: DateTimeFilter
+  tournament: TournamentRelationFilter
+  season: SeasonRelationFilter
+  club: ClubRelationFilter
+  owner: OwnerRelationFilter
+  PrizeAssignment: PrizeAssignmentListRelationFilter
+}
+
+input DateTimeFilter {
+  equals: DateTime
+  in: [DateTime!]
+  notIn: [DateTime!]
+  lt: DateTime
+  lte: DateTime
+  gt: DateTime
+  gte: DateTime
+  not: NestedDateTimeFilter
+}
+
+"""
+The javascript `Date` as string. Type represents date and time as the ISO Date string.
+"""
+scalar DateTime
+
+input NestedDateTimeFilter {
+  equals: DateTime
+  in: [DateTime!]
+  notIn: [DateTime!]
+  lt: DateTime
+  lte: DateTime
+  gt: DateTime
+  gte: DateTime
+  not: NestedDateTimeFilter
+}
+
+input TournamentRelationFilter {
+  is: TournamentWhereInput
+  isNot: TournamentWhereInput
+}
+
+input TournamentWhereInput {
+  AND: [TournamentWhereInput!]
+  OR: [TournamentWhereInput!]
+  NOT: [TournamentWhereInput!]
+  id: IntFilter
+  competitionId: IntFilter
+  seasonId: IntFilter
+  type: StringFilter
+  name: StringFilter
+  seed: StringFilter
+  instance: StringFilter
+  state: EnumTournamentStateFilter
+  createdAt: FloatFilter
+  startTimestamp: FloatNullableFilter
+  competition: CompetitionRelationFilter
+  season: SeasonRelationFilter
+  clubTournaments: ClubTournamentListRelationFilter
+  fixtures: FixtureListRelationFilter
+  TournamentResult: TournamentResultListRelationFilter
+}
+
+input EnumTournamentStateFilter {
+  equals: TournamentState
+  in: [TournamentState!]
+  notIn: [TournamentState!]
+  not: NestedEnumTournamentStateFilter
+}
+
+enum TournamentState {
+  PENDING
+  PRE_SCHEDULE
+  LIVE
+  ENDED
+  COMPLETE
+}
+
+input NestedEnumTournamentStateFilter {
+  equals: TournamentState
+  in: [TournamentState!]
+  notIn: [TournamentState!]
+  not: NestedEnumTournamentStateFilter
+}
+
+input CompetitionRelationFilter {
+  is: CompetitionWhereInput
+  isNot: CompetitionWhereInput
+}
+
+input CompetitionWhereInput {
+  AND: [CompetitionWhereInput!]
+  OR: [CompetitionWhereInput!]
+  NOT: [CompetitionWhereInput!]
+  id: IntFilter
+  type: StringFilter
+  name: StringFilter
+  seed: StringFilter
+  scheduler: JsonFilter
+  divisionId: IntFilter
+  leagueIndex: IntNullableFilter
+  parentCompetitionId: IntNullableFilter
+  division: DivisionRelationFilter
+  promotionSelectorsFrom: PromotionSelectorListRelationFilter
+  tournaments: TournamentListRelationFilter
+}
+
+input DivisionRelationFilter {
+  is: DivisionWhereInput
+  isNot: DivisionWhereInput
+}
+
+input DivisionWhereInput {
+  AND: [DivisionWhereInput!]
+  OR: [DivisionWhereInput!]
+  NOT: [DivisionWhereInput!]
+  id: IntFilter
+  name: StringFilter
+  tier: IntFilter
+  competitions: CompetitionListRelationFilter
+  Prize: PrizeListRelationFilter
+}
+
+input CompetitionListRelationFilter {
+  every: CompetitionWhereInput
+  some: CompetitionWhereInput
+  none: CompetitionWhereInput
+}
+
+input PrizeListRelationFilter {
+  every: PrizeWhereInput
+  some: PrizeWhereInput
+  none: PrizeWhereInput
+}
+
+input PrizeWhereInput {
+  AND: [PrizeWhereInput!]
+  OR: [PrizeWhereInput!]
+  NOT: [PrizeWhereInput!]
+  id: IntFilter
+  type: EnumPrizeTypeFilter
+  contractAddress: StringNullableFilter
+  seasonId: IntFilter
+  divisionId: IntFilter
+  assignedAt: DateTimeNullableFilter
+  description: StringNullableFilter
+  distributionType: StringNullableFilter
+  season: SeasonRelationFilter
+  division: DivisionRelationFilter
+  values: PrizeValueListRelationFilter
+  PrizeAssignment: PrizeAssignmentListRelationFilter
+}
+
+input EnumPrizeTypeFilter {
+  equals: PrizeType
+  in: [PrizeType!]
+  notIn: [PrizeType!]
+  not: NestedEnumPrizeTypeFilter
+}
+
+enum PrizeType {
+  ETH_TOKEN
+}
+
+input NestedEnumPrizeTypeFilter {
+  equals: PrizeType
+  in: [PrizeType!]
+  notIn: [PrizeType!]
+  not: NestedEnumPrizeTypeFilter
+}
+
+input DateTimeNullableFilter {
+  equals: DateTime
+  in: [DateTime!]
+  notIn: [DateTime!]
+  lt: DateTime
+  lte: DateTime
+  gt: DateTime
+  gte: DateTime
+  not: NestedDateTimeNullableFilter
+}
+
+input NestedDateTimeNullableFilter {
+  equals: DateTime
+  in: [DateTime!]
+  notIn: [DateTime!]
+  lt: DateTime
+  lte: DateTime
+  gt: DateTime
+  gte: DateTime
+  not: NestedDateTimeNullableFilter
+}
+
+input SeasonRelationFilter {
+  is: SeasonWhereInput
+  isNot: SeasonWhereInput
+}
+
+input SeasonWhereInput {
+  AND: [SeasonWhereInput!]
+  OR: [SeasonWhereInput!]
+  NOT: [SeasonWhereInput!]
+  id: IntFilter
+  name: StringFilter
+  state: EnumSeasonStateFilter
+  startTimestamp: FloatNullableFilter
+  preSeasonStartedAt: FloatNullableFilter
+  endTimestamp: FloatNullableFilter
+  fixtureScheduleRealTimestamp: FloatNullableFilter
+  academyExpireAtRealTimestamp: FloatNullableFilter
+  tournamentCompleteAtRealTimestamp: FloatNullableFilter
+  numTeamsPromoted: IntFilter
+  players: PlayerListRelationFilter
+  tournaments: TournamentListRelationFilter
+  playerRegistrationPlayerRecords: PlayerRegistrationPlayerRecordListRelationFilter
+  TournamentResult: TournamentResultListRelationFilter
+  PlayerAttributes: PlayerAttributesListRelationFilter
+  RegistrationWindow: RegistrationWindowListRelationFilter
+  Prize: PrizeListRelationFilter
+  PrizeClaim: PrizeClaimListRelationFilter
+}
+
+input EnumSeasonStateFilter {
+  equals: SeasonState
+  in: [SeasonState!]
+  notIn: [SeasonState!]
+  not: NestedEnumSeasonStateFilter
+}
+
+enum SeasonState {
+  PRE_SEASON
+  PENDING
+  LIVE
+  POST_SEASON
+  COMPLETE
+}
+
+input NestedEnumSeasonStateFilter {
+  equals: SeasonState
+  in: [SeasonState!]
+  notIn: [SeasonState!]
+  not: NestedEnumSeasonStateFilter
+}
+
+input TournamentListRelationFilter {
+  every: TournamentWhereInput
+  some: TournamentWhereInput
+  none: TournamentWhereInput
+}
+
+input PlayerRegistrationPlayerRecordListRelationFilter {
+  every: PlayerRegistrationPlayerRecordWhereInput
+  some: PlayerRegistrationPlayerRecordWhereInput
+  none: PlayerRegistrationPlayerRecordWhereInput
+}
+
+input PlayerRegistrationPlayerRecordWhereInput {
+  AND: [PlayerRegistrationPlayerRecordWhereInput!]
+  OR: [PlayerRegistrationPlayerRecordWhereInput!]
+  NOT: [PlayerRegistrationPlayerRecordWhereInput!]
+  id: IntFilter
+  playerRegistrationId: IntFilter
+  seasonId: IntFilter
+  appearances: IntFilter
+  goalsScored: IntFilter
+  sessionsTrained: IntFilter
+  playerRegistration: PlayerRegistrationRelationFilter
+  season: SeasonRelationFilter
+}
+
+input PlayerRegistrationRelationFilter {
+  is: PlayerRegistrationWhereInput
+  isNot: PlayerRegistrationWhereInput
+}
+
+input PlayerRegistrationWhereInput {
+  AND: [PlayerRegistrationWhereInput!]
+  OR: [PlayerRegistrationWhereInput!]
+  NOT: [PlayerRegistrationWhereInput!]
+  id: IntFilter
+  playerId: StringFilter
+  clubId: IntNullableFilter
+  registrationWindowId: IntFilter
+  registeredAtRealTimestamp: FloatFilter
+  expiredAtRealTimestamp: FloatNullableFilter
+  flaggedToExpire: BoolFilter
+  player: PlayerRelationFilter
+  club: ClubNullableRelationFilter
+  playerRegistrationRecord: PlayerRegistrationPlayerRecordListRelationFilter
+  registrationWindow: RegistrationWindowRelationFilter
+}
+
+input PlayerRelationFilter {
+  is: PlayerWhereInput
+  isNot: PlayerWhereInput
+}
+
+input RegistrationWindowRelationFilter {
+  is: RegistrationWindowWhereInput
+  isNot: RegistrationWindowWhereInput
+}
+
+input RegistrationWindowWhereInput {
+  AND: [RegistrationWindowWhereInput!]
+  OR: [RegistrationWindowWhereInput!]
+  NOT: [RegistrationWindowWhereInput!]
+  id: IntFilter
+  seasonId: IntFilter
+  openingRealTimestamp: FloatFilter
+  closingRealTimestamp: FloatNullableFilter
+  unregistrationsAllowed: IntNullableFilter
+  registrationWindowState: EnumRegistrationWindowStateFilter
+  shouldReturnUnownedPlayers: BoolFilter
+  season: SeasonRelationFilter
+  PlayerRegistration: PlayerRegistrationListRelationFilter
+}
+
+input EnumRegistrationWindowStateFilter {
+  equals: RegistrationWindowState
+  in: [RegistrationWindowState!]
+  notIn: [RegistrationWindowState!]
+  not: NestedEnumRegistrationWindowStateFilter
+}
+
+enum RegistrationWindowState {
+  INITIAL
+  UNOWNED_PLAYERS_RETURNED
+}
+
+input NestedEnumRegistrationWindowStateFilter {
+  equals: RegistrationWindowState
+  in: [RegistrationWindowState!]
+  notIn: [RegistrationWindowState!]
+  not: NestedEnumRegistrationWindowStateFilter
+}
+
+input PlayerRegistrationListRelationFilter {
+  every: PlayerRegistrationWhereInput
+  some: PlayerRegistrationWhereInput
+  none: PlayerRegistrationWhereInput
+}
+
+input PlayerAttributesListRelationFilter {
+  every: PlayerAttributesWhereInput
+  some: PlayerAttributesWhereInput
+  none: PlayerAttributesWhereInput
+}
+
+input PlayerAttributesWhereInput {
+  AND: [PlayerAttributesWhereInput!]
+  OR: [PlayerAttributesWhereInput!]
+  NOT: [PlayerAttributesWhereInput!]
+  id: IntFilter
+  age: IntFilter
+  leadership: FloatFilter
+  condition: FloatFilter
+  stamina: FloatFilter
+  gamesSuspended: IntFilter
+  accumulatedYellows: IntFilter
+  isLatest: BoolFilter
+  timestamp: FloatFilter
+  footedness: StringFilter
+  weakFootAbility: IntFilter
+  unlockedPotential: IntFilter
+  usedPotential: IntFilter
+  accumulatedMinutes: FloatFilter
+  injuredUntilRealTimestamp: FloatNullableFilter
+  injuredUntilGameTimestamp: FloatNullableFilter
+  playerId: StringFilter
+  seasonId: IntNullableFilter
+  player: PlayerRelationFilter
+  season: SeasonNullableRelationFilter
+}
+
+input SeasonNullableRelationFilter {
+  is: SeasonWhereInput
+  isNot: SeasonWhereInput
+}
+
+input RegistrationWindowListRelationFilter {
+  every: RegistrationWindowWhereInput
+  some: RegistrationWindowWhereInput
+  none: RegistrationWindowWhereInput
+}
+
+input PrizeClaimListRelationFilter {
+  every: PrizeClaimWhereInput
+  some: PrizeClaimWhereInput
+  none: PrizeClaimWhereInput
+}
+
+input PrizeClaimWhereInput {
+  AND: [PrizeClaimWhereInput!]
+  OR: [PrizeClaimWhereInput!]
+  NOT: [PrizeClaimWhereInput!]
+  id: IntFilter
+  ownerId: IntFilter
+  seasonId: IntFilter
+  contractAddress: StringFilter
+  claimValue: StringFilter
+  merkleRoot: StringNullableFilter
+  status: EnumPrizeClaimStatusFilter
+  expiresAtRealTimestamp: FloatNullableFilter
+  createdAt: DateTimeFilter
+  updatedAt: DateTimeFilter
+  Owner: OwnerRelationFilter
+  PrizeAssignment: PrizeAssignmentListRelationFilter
+  Season: SeasonRelationFilter
+}
+
+input EnumPrizeClaimStatusFilter {
+  equals: PrizeClaimStatus
+  in: [PrizeClaimStatus!]
+  notIn: [PrizeClaimStatus!]
+  not: NestedEnumPrizeClaimStatusFilter
+}
+
+enum PrizeClaimStatus {
+  UNCOMMITTED
+  UNCLAIMED
+  CLAIMED
+  EXPIRED
+}
+
+input NestedEnumPrizeClaimStatusFilter {
+  equals: PrizeClaimStatus
+  in: [PrizeClaimStatus!]
+  notIn: [PrizeClaimStatus!]
+  not: NestedEnumPrizeClaimStatusFilter
+}
+
+input PrizeAssignmentListRelationFilter {
+  every: PrizeAssignmentWhereInput
+  some: PrizeAssignmentWhereInput
+  none: PrizeAssignmentWhereInput
+}
+
+input PrizeAssignmentWhereInput {
+  AND: [PrizeAssignmentWhereInput!]
+  OR: [PrizeAssignmentWhereInput!]
+  NOT: [PrizeAssignmentWhereInput!]
+  id: IntFilter
+  tournamentResultId: IntFilter
+  prizeClaimId: IntNullableFilter
+  prizeId: IntFilter
+  value: StringFilter
+  status: EnumPrizeAssignmentStatusFilter
+  createdAt: DateTimeFilter
+  TournamentResult: TournamentResultRelationFilter
+  PrizeClaim: PrizeClaimNullableRelationFilter
+  Prize: PrizeRelationFilter
+}
+
+input EnumPrizeAssignmentStatusFilter {
+  equals: PrizeAssignmentStatus
+  in: [PrizeAssignmentStatus!]
+  notIn: [PrizeAssignmentStatus!]
+  not: NestedEnumPrizeAssignmentStatusFilter
+}
+
+enum PrizeAssignmentStatus {
+  PENDING
+  ACTIVE
+  COMPLETE
+  EXPIRED
+}
+
+input NestedEnumPrizeAssignmentStatusFilter {
+  equals: PrizeAssignmentStatus
+  in: [PrizeAssignmentStatus!]
+  notIn: [PrizeAssignmentStatus!]
+  not: NestedEnumPrizeAssignmentStatusFilter
+}
+
+input TournamentResultRelationFilter {
+  is: TournamentResultWhereInput
+  isNot: TournamentResultWhereInput
+}
+
+input PrizeClaimNullableRelationFilter {
+  is: PrizeClaimWhereInput
+  isNot: PrizeClaimWhereInput
+}
+
+input PrizeRelationFilter {
+  is: PrizeWhereInput
+  isNot: PrizeWhereInput
+}
+
+input PrizeValueListRelationFilter {
+  every: PrizeValueWhereInput
+  some: PrizeValueWhereInput
+  none: PrizeValueWhereInput
+}
+
+input PrizeValueWhereInput {
+  AND: [PrizeValueWhereInput!]
+  OR: [PrizeValueWhereInput!]
+  NOT: [PrizeValueWhereInput!]
+  id: IntFilter
+  prizeId: IntFilter
+  value: StringFilter
+  createdAt: DateTimeFilter
+  prize: PrizeRelationFilter
+}
+
+input PromotionSelectorListRelationFilter {
+  every: PromotionSelectorWhereInput
+  some: PromotionSelectorWhereInput
+  none: PromotionSelectorWhereInput
+}
+
+input PromotionSelectorWhereInput {
+  AND: [PromotionSelectorWhereInput!]
+  OR: [PromotionSelectorWhereInput!]
+  NOT: [PromotionSelectorWhereInput!]
+  id: IntFilter
+  type: StringFilter
+  competitionIdFrom: IntFilter
+  competitionIdTo: IntFilter
+  start: JsonFilter
+  end: JsonFilter
+  competitionFrom: CompetitionRelationFilter
+}
+
+input ClubTournamentListRelationFilter {
+  every: ClubTournamentWhereInput
+  some: ClubTournamentWhereInput
+  none: ClubTournamentWhereInput
+}
+
+input ClubTournamentWhereInput {
+  AND: [ClubTournamentWhereInput!]
+  OR: [ClubTournamentWhereInput!]
+  NOT: [ClubTournamentWhereInput!]
+  id: IntFilter
+  tournamentId: IntFilter
+  clubId: IntFilter
+  position: IntFilter
+  clubStatsId: IntFilter
+  tournament: TournamentRelationFilter
+  club: ClubRelationFilter
+  clubStats: ClubStatsRelationFilter
+}
+
+input ClubRelationFilter {
+  is: ClubWhereInput
+  isNot: ClubWhereInput
+}
+
+input ClubStatsRelationFilter {
+  is: ClubStatsWhereInput
+  isNot: ClubStatsWhereInput
+}
+
+input ClubStatsWhereInput {
+  AND: [ClubStatsWhereInput!]
+  OR: [ClubStatsWhereInput!]
+  NOT: [ClubStatsWhereInput!]
+  id: IntFilter
+  clubId: IntFilter
+  games: IntFilter
+  wins: IntFilter
+  draws: IntFilter
+  losses: IntFilter
+  points: IntFilter
+  possession: FloatFilter
+  assists: IntFilter
+  goals: IntFilter
+  goalsAgainst: IntFilter
+  shotsOnTarget: IntFilter
+  shotsOffTarget: IntFilter
+  passes: IntFilter
+  yellowCards: IntFilter
+  redCards: IntFilter
+  corners: IntFilter
+  possessionWon: IntFilter
+  gkSaves: IntFilter
+  fouls: IntFilter
+  freeKicks: IntFilter
+  offsides: IntFilter
+  freeKicksScored: IntFilter
+  crosses: IntFilter
+  attemptedPasses: IntFilter
+  blocks: IntFilter
+  consecutivePreGameLineupSet: IntFilter
+  consecutiveInGameLineupSet: IntFilter
+  consecutiveNotMakingPreGameLineupSet: IntFilter
+  consecutiveNotMakingInGameLineupSet: IntFilter
+  lastPreGameLineupSetTimestamp: FloatFilter
+  lastInGameLineupSetTimestamp: FloatFilter
+  shotsBlocked: IntFilter
+  totalShots: IntFilter
+  shotsFromInsideTheBox: IntFilter
+  normalShots: IntFilter
+  backHeelShots: IntFilter
+  divingHeaderShots: IntFilter
+  halfVolleyShots: IntFilter
+  volleyShots: IntFilter
+  lobShots: IntFilter
+  overheadKickShots: IntFilter
+  completedPasses: IntFilter
+  interceptedPasses: IntFilter
+  groundPasses: IntFilter
+  offsidePasses: IntFilter
+  tacklesExecuted: IntFilter
+  tacklesReceived: IntFilter
+  clearances: IntFilter
+  interceptions: IntFilter
+  failedInterceptions: IntFilter
+  fiftyFiftiesWon: IntFilter
+  fiftyFiftiesLost: IntFilter
+  duelsWon: IntFilter
+  duelsLost: IntFilter
+  attemptedDribbles: IntFilter
+  completedDribbles: IntFilter
+  carries: IntFilter
+  possessionInfo: JsonFilter
+  penaltiesWon: IntFilter
+  penaltiesConceded: IntFilter
+  penaltiesScored: IntFilter
+  penaltiesMissed: IntFilter
+  penaltiesSaved: IntFilter
+  club: ClubRelationFilter
+  clubTournament: ClubTournamentNullableRelationFilter
+  clubFixture: ClubFixtureNullableRelationFilter
+}
+
+input ClubTournamentNullableRelationFilter {
+  is: ClubTournamentWhereInput
+  isNot: ClubTournamentWhereInput
+}
+
+input ClubFixtureNullableRelationFilter {
+  is: ClubFixtureWhereInput
+  isNot: ClubFixtureWhereInput
+}
+
+input ClubFixtureWhereInput {
+  AND: [ClubFixtureWhereInput!]
+  OR: [ClubFixtureWhereInput!]
+  NOT: [ClubFixtureWhereInput!]
+  id: IntFilter
+  date: FloatFilter
+  clubId: IntFilter
+  fixtureId: IntFilter
+  isHome: BoolFilter
+  clubStatsId: IntFilter
+  dummy: StringNullableFilter
+  club: ClubRelationFilter
+  fixture: FixtureRelationFilter
+  clubStats: ClubStatsRelationFilter
+}
+
+input FixtureRelationFilter {
+  is: FixtureWhereInput
+  isNot: FixtureWhereInput
+}
+
+input FixtureWhereInput {
+  AND: [FixtureWhereInput!]
+  OR: [FixtureWhereInput!]
+  NOT: [FixtureWhereInput!]
+  id: IntFilter
+  date: FloatFilter
+  seed: StringFilter
+  isNeutralVenue: BoolFilter
+  matchId: StringNullableFilter
+  roundIndex: IntFilter
+  fixtureIndex: IntFilter
+  tournamentId: IntFilter
+  state: StringFilter
+  realWorldTimestamp: FloatFilter
+  inGameTimestamp: FloatFilter
+  match: MatchNullableRelationFilter
+  tournament: TournamentRelationFilter
+  clubFixtures: ClubFixtureListRelationFilter
+}
+
+input MatchNullableRelationFilter {
+  is: MatchWhereInput
+  isNot: MatchWhereInput
+}
+
+input MatchWhereInput {
+  AND: [MatchWhereInput!]
+  OR: [MatchWhereInput!]
+  NOT: [MatchWhereInput!]
+  id: StringFilter
+  seed: StringFilter
+  startTimestamp: FloatFilter
+  initialParams: JsonFilter
+  homeTeam: JsonFilter
+  awayTeam: JsonFilter
+  players: JsonFilter
+  penaltyShootoutState: JsonFilter
+  state: IntFilter
+  possessionClubId: IntFilter
+  lastTeamToTouchBall: IntFilter
+  possessionPlayerId: StringNullableFilter
+  ballLocation: JsonFilter
+  underPressure: BoolFilter
+  frames: JsonFilter
+  periodStates: JsonFilter
+  grid: JsonFilter
+  isResultProcessed: BoolFilter
+  timestamp: FloatFilter
+  keyEvents: JsonFilter
+  activeEvents: JsonFilter
+  referee: JsonFilter
+  pendingTacticalChanges: JsonFilter
+  pendingAdminChanges: JsonFilter
+  possessionIntervalMinutes: IntNullableListFilter
+  possessionIntervalMinutesCompleted: JsonFilter
+  digest: StringFilter
+  ratingsSummary: JsonFilter
+  fixture: FixtureNullableRelationFilter
+  matchChanges: MatchChangeListRelationFilter
+}
+
+input IntNullableListFilter {
+  equals: [Int!]
+  has: Int
+  hasEvery: [Int!]
+  hasSome: [Int!]
+  isEmpty: Boolean
+}
+
+input FixtureNullableRelationFilter {
+  is: FixtureWhereInput
+  isNot: FixtureWhereInput
+}
+
+input MatchChangeListRelationFilter {
+  every: MatchChangeWhereInput
+  some: MatchChangeWhereInput
+  none: MatchChangeWhereInput
+}
+
+input MatchChangeWhereInput {
+  AND: [MatchChangeWhereInput!]
+  OR: [MatchChangeWhereInput!]
+  NOT: [MatchChangeWhereInput!]
+  id: IntFilter
+  timestampReceived: FloatFilter
+  changes: JsonFilter
+  digest: StringFilter
+  matchId: StringFilter
+  createdAt: DateTimeFilter
+  match: MatchRelationFilter
+}
+
+input MatchRelationFilter {
+  is: MatchWhereInput
+  isNot: MatchWhereInput
+}
+
+input ClubFixtureListRelationFilter {
+  every: ClubFixtureWhereInput
+  some: ClubFixtureWhereInput
+  none: ClubFixtureWhereInput
+}
+
+input FixtureListRelationFilter {
+  every: FixtureWhereInput
+  some: FixtureWhereInput
+  none: FixtureWhereInput
+}
+
+input ClubBadgeRelationFilter {
+  is: ClubBadgeWhereInput
+  isNot: ClubBadgeWhereInput
+}
+
+input ClubBadgeWhereInput {
+  AND: [ClubBadgeWhereInput!]
+  OR: [ClubBadgeWhereInput!]
+  NOT: [ClubBadgeWhereInput!]
+  id: IntFilter
+  data: JsonFilter
+  club: ClubNullableRelationFilter
+}
+
+input StadiumRelationFilter {
+  is: StadiumWhereInput
+  isNot: StadiumWhereInput
+}
+
+input StadiumWhereInput {
+  AND: [StadiumWhereInput!]
+  OR: [StadiumWhereInput!]
+  NOT: [StadiumWhereInput!]
+  id: IntFilter
+  name: StringFilter
+  capacity: IntFilter
+  club: ClubListRelationFilter
+  stadiumStand: StadiumStandListRelationFilter
+}
+
+input StadiumStandListRelationFilter {
+  every: StadiumStandWhereInput
+  some: StadiumStandWhereInput
+  none: StadiumStandWhereInput
+}
+
+input StadiumStandWhereInput {
+  AND: [StadiumStandWhereInput!]
+  OR: [StadiumStandWhereInput!]
+  NOT: [StadiumStandWhereInput!]
+  id: IntFilter
+  capacity: IntFilter
+  side: EnumStadiumStandSideFilter
+  size: EnumStadiumStandSizeFilter
+  style: EnumStadiumStandStyleFilter
+  variant: IntFilter
+  colours: JsonFilter
+  stadiumId: IntFilter
+  stadium: StadiumRelationFilter
+}
+
+input EnumStadiumStandSideFilter {
+  equals: StadiumStandSide
+  in: [StadiumStandSide!]
+  notIn: [StadiumStandSide!]
+  not: NestedEnumStadiumStandSideFilter
+}
+
+enum StadiumStandSide {
+  NORTH
+  EAST
+  SOUTH
+  WEST
+}
+
+input NestedEnumStadiumStandSideFilter {
+  equals: StadiumStandSide
+  in: [StadiumStandSide!]
+  notIn: [StadiumStandSide!]
+  not: NestedEnumStadiumStandSideFilter
+}
+
+input EnumStadiumStandSizeFilter {
+  equals: StadiumStandSize
+  in: [StadiumStandSize!]
+  notIn: [StadiumStandSize!]
+  not: NestedEnumStadiumStandSizeFilter
+}
+
+enum StadiumStandSize {
+  EXTRA_SMALL
+  SMALL
+  MEDIUM
+  LARGE
+  EXTRA_LARGE
+}
+
+input NestedEnumStadiumStandSizeFilter {
+  equals: StadiumStandSize
+  in: [StadiumStandSize!]
+  notIn: [StadiumStandSize!]
+  not: NestedEnumStadiumStandSizeFilter
+}
+
+input EnumStadiumStandStyleFilter {
+  equals: StadiumStandStyle
+  in: [StadiumStandStyle!]
+  notIn: [StadiumStandStyle!]
+  not: NestedEnumStadiumStandStyleFilter
+}
+
+enum StadiumStandStyle {
+  WOOD
+  BRICK
+  STONE
+  METAL
+  DARK_METAL
+  POST_MODERN
+}
+
+input NestedEnumStadiumStandStyleFilter {
+  equals: StadiumStandStyle
+  in: [StadiumStandStyle!]
+  notIn: [StadiumStandStyle!]
+  not: NestedEnumStadiumStandStyleFilter
+}
+
+input AvailableHomeGameTimeNullableRelationFilter {
+  is: AvailableHomeGameTimeWhereInput
+  isNot: AvailableHomeGameTimeWhereInput
+}
+
+input AvailableHomeGameTimeWhereInput {
+  AND: [AvailableHomeGameTimeWhereInput!]
+  OR: [AvailableHomeGameTimeWhereInput!]
+  NOT: [AvailableHomeGameTimeWhereInput!]
+  id: IntFilter
+  realWorldGameTime: StringFilter
+  homeGameTime: FloatFilter
+  Club: ClubListRelationFilter
+}
+
+input KitListRelationFilter {
+  every: KitWhereInput
+  some: KitWhereInput
+  none: KitWhereInput
+}
+
+input KitWhereInput {
+  AND: [KitWhereInput!]
+  OR: [KitWhereInput!]
+  NOT: [KitWhereInput!]
+  id: IntFilter
+  clubId: IntFilter
+  kitType: StringFilter
+  data: JsonFilter
+  club: ClubRelationFilter
+}
+
+input ActionListRelationFilter {
+  every: ActionWhereInput
+  some: ActionWhereInput
+  none: ActionWhereInput
+}
+
+input ActionWhereInput {
+  AND: [ActionWhereInput!]
+  OR: [ActionWhereInput!]
+  NOT: [ActionWhereInput!]
+  id: IntFilter
+  type: StringFilter
+  timestamp: FloatFilter
+  data: JsonFilter
+  realWorldTimestamp: FloatFilter
+  clubs: ClubListRelationFilter
+  players: PlayerListRelationFilter
+  ethereumEvents: EthereumEventListRelationFilter
+}
+
+input EthereumEventListRelationFilter {
+  every: EthereumEventWhereInput
+  some: EthereumEventWhereInput
+  none: EthereumEventWhereInput
+}
+
+input EthereumEventWhereInput {
+  AND: [EthereumEventWhereInput!]
+  OR: [EthereumEventWhereInput!]
+  NOT: [EthereumEventWhereInput!]
+  id: IntFilter
+  blockNumber: IntFilter
+  transactionHash: StringFilter
+  event: JsonFilter
+  actions: ActionListRelationFilter
+}
+
+input LineupListRelationFilter {
+  every: LineupWhereInput
+  some: LineupWhereInput
+  none: LineupWhereInput
+}
+
+input LineupWhereInput {
+  AND: [LineupWhereInput!]
+  OR: [LineupWhereInput!]
+  NOT: [LineupWhereInput!]
+  id: IntFilter
+  clubId: IntFilter
+  isSelected: BoolFilter
+  tacticsId: IntFilter
+  club: ClubRelationFilter
+  tactics: TacticsRelationFilter
+  playerLineups: PlayerLineupListRelationFilter
+}
+
+input TacticsRelationFilter {
+  is: TacticsWhereInput
+  isNot: TacticsWhereInput
+}
+
+input TacticsWhereInput {
+  AND: [TacticsWhereInput!]
+  OR: [TacticsWhereInput!]
+  NOT: [TacticsWhereInput!]
+  id: IntFilter
+  formationId: IntFilter
+  mentality: StringFilter
+  formation: FormationRelationFilter
+  lineup: LineupNullableRelationFilter
+}
+
+input FormationRelationFilter {
+  is: FormationWhereInput
+  isNot: FormationWhereInput
+}
+
+input FormationWhereInput {
+  AND: [FormationWhereInput!]
+  OR: [FormationWhereInput!]
+  NOT: [FormationWhereInput!]
+  id: IntFilter
+  name: StringFilter
+  tactics: TacticsListRelationFilter
+  slots: FormationSlotListRelationFilter
+}
+
+input TacticsListRelationFilter {
+  every: TacticsWhereInput
+  some: TacticsWhereInput
+  none: TacticsWhereInput
+}
+
+input FormationSlotListRelationFilter {
+  every: FormationSlotWhereInput
+  some: FormationSlotWhereInput
+  none: FormationSlotWhereInput
+}
+
+input FormationSlotWhereInput {
+  AND: [FormationSlotWhereInput!]
+  OR: [FormationSlotWhereInput!]
+  NOT: [FormationSlotWhereInput!]
+  id: IntFilter
+  formationId: IntFilter
+  slotIndex: IntFilter
+  pitchPosition: StringFilter
+  formation: FormationRelationFilter
+}
+
+input LineupNullableRelationFilter {
+  is: LineupWhereInput
+  isNot: LineupWhereInput
+}
+
+input PlayerLineupListRelationFilter {
+  every: PlayerLineupWhereInput
+  some: PlayerLineupWhereInput
+  none: PlayerLineupWhereInput
+}
+
+input PlayerLineupWhereInput {
+  AND: [PlayerLineupWhereInput!]
+  OR: [PlayerLineupWhereInput!]
+  NOT: [PlayerLineupWhereInput!]
+  id: IntFilter
+  playerId: StringFilter
+  lineupId: IntFilter
+  formationSlotIndex: IntFilter
+  isCaptain: BoolFilter
+  player: PlayerRelationFilter
+  lineup: LineupRelationFilter
+}
+
+input LineupRelationFilter {
+  is: LineupWhereInput
+  isNot: LineupWhereInput
+}
+
+input ClubStatsListRelationFilter {
+  every: ClubStatsWhereInput
+  some: ClubStatsWhereInput
+  none: ClubStatsWhereInput
+}
+
+input TrainingSlotListRelationFilter {
+  every: TrainingSlotWhereInput
+  some: TrainingSlotWhereInput
+  none: TrainingSlotWhereInput
+}
+
+input TrainingSlotWhereInput {
+  AND: [TrainingSlotWhereInput!]
+  OR: [TrainingSlotWhereInput!]
+  NOT: [TrainingSlotWhereInput!]
+  id: IntFilter
+  clubId: IntFilter
+  baseDuration: IntFilter
+  growthFactor: IntFilter
+  conditionCost: IntFilter
+  trainablePositions: StringNullableListFilter
+  playerId: StringNullableFilter
+  expiryTime: FloatNullableFilter
+  position: StringNullableFilter
+  isComplete: BoolFilter
+  club: ClubRelationFilter
+  player: PlayerNullableRelationFilter
+}
+
+input StringNullableListFilter {
+  equals: [String!]
+  has: String
+  hasEvery: [String!]
+  hasSome: [String!]
+  isEmpty: Boolean
+}
+
+input PlayerNullableRelationFilter {
+  is: PlayerWhereInput
+  isNot: PlayerWhereInput
+}
+
+type Club {
+  id: Int!
+  seed: String!
+  abbreviation: String!
+  name: String!
+  city: String!
+  description: String!
+  pattern: String!
+  colours: JSON!
+  ownerId: Int!
+  clubBadgeId: Int!
+  stadiumId: Int!
+  homeGameTimeId: Int!
+  lastAcademyIntake: Int!
+  isInactive: Boolean!
+  fflMembershipStatus: Int!
+  reactivationRealTimestamp: Float
+  twitterAccountName: String
+  showTwitterAccountName: Boolean!
+  _count: ClubCount
+  owner: Owner!
+  clubBadge: ClubBadge!
+  stadium: Stadium!
+  homeGameTime(where: AvailableHomeGameTimeWhereInput): AvailableHomeGameTime
+  kits(where: KitWhereInput, orderBy: [KitOrderByWithRelationInput!], cursor: KitWhereUniqueInput, take: Int, skip: Int, distinct: [KitScalarFieldEnum!]): [Kit!]!
+  actions(where: ActionWhereInput, orderBy: [ActionOrderByWithRelationInput!], cursor: ActionWhereUniqueInput, take: Int, skip: Int, distinct: [ActionScalarFieldEnum!]): [Action!]!
+  lineups(where: LineupWhereInput, orderBy: [LineupOrderByWithRelationInput!], cursor: LineupWhereUniqueInput, take: Int, skip: Int, distinct: [LineupScalarFieldEnum!]): [Lineup!]!
+  players(where: PlayerWhereInput, orderBy: [PlayerOrderByWithRelationInput!], cursor: PlayerWhereUniqueInput, take: Int, skip: Int, distinct: [PlayerScalarFieldEnum!]): [Player!]!
+  originPlayers(where: PlayerWhereInput, orderBy: [PlayerOrderByWithRelationInput!], cursor: PlayerWhereUniqueInput, take: Int, skip: Int, distinct: [PlayerScalarFieldEnum!]): [Player!]!
+  clubTournaments(where: ClubTournamentWhereInput, orderBy: [ClubTournamentOrderByWithRelationInput!], cursor: ClubTournamentWhereUniqueInput, take: Int, skip: Int, distinct: [ClubTournamentScalarFieldEnum!]): [ClubTournament!]!
+  clubFixtures(where: ClubFixtureWhereInput, orderBy: [ClubFixtureOrderByWithRelationInput!], cursor: ClubFixtureWhereUniqueInput, take: Int, skip: Int, distinct: [ClubFixtureScalarFieldEnum!]): [ClubFixture!]!
+  stats(where: ClubStatsWhereInput, orderBy: [ClubStatsOrderByWithRelationInput!], cursor: ClubStatsWhereUniqueInput, take: Int, skip: Int, distinct: [ClubStatsScalarFieldEnum!]): [ClubStats!]!
+  trainingSlots(where: TrainingSlotWhereInput, orderBy: [TrainingSlotOrderByWithRelationInput!], cursor: TrainingSlotWhereUniqueInput, take: Int, skip: Int, distinct: [TrainingSlotScalarFieldEnum!]): [TrainingSlot!]!
+  TournamentResult(where: TournamentResultWhereInput, orderBy: [TournamentResultOrderByWithRelationInput!], cursor: TournamentResultWhereUniqueInput, take: Int, skip: Int, distinct: [TournamentResultScalarFieldEnum!]): [TournamentResult!]!
+  PlayerRegistration(where: PlayerRegistrationWhereInput, orderBy: [PlayerRegistrationOrderByWithRelationInput!], cursor: PlayerRegistrationWhereUniqueInput, take: Int, skip: Int, distinct: [PlayerRegistrationScalarFieldEnum!]): [PlayerRegistration!]!
+  isPartOfAmateurLeague: Boolean!
+  hasAppliedToRejoinFFL: Boolean!
+  registeredPlayersCount: Float!
+  unregisteredPlayersCount: Float!
+  unregistrationsThisWindow: Float!
+  unregisteredPlayers(skip: Int!, take: Int!): [Player!]!
+  registeredPlayers(skip: Int!, take: Int!): [Player!]!
+  trainablePlayers(skip: Int!, take: Int!): [Player!]!
+  selectedLineupErrors: [String!]!
+  mostAppearances(numberRequired: Int!, seasonId: Int!): [ClubPlayerRecord!]!
+  mostGoals(numberRequired: Int!, seasonId: Int!): [ClubPlayerRecord!]!
+  allTimeAppearances(numberRequired: Int!): [ClubPlayerRecord!]!
+  allTimeGoals(numberRequired: Int!): [ClubPlayerRecord!]!
+}
+
+type ClubCount {
+  kits(where: KitWhereInput): Int!
+  actions(where: ActionWhereInput): Int!
+  lineups(where: LineupWhereInput): Int!
+  players(where: PlayerWhereInput): Int!
+  originPlayers(where: PlayerWhereInput): Int!
+  clubTournaments(where: ClubTournamentWhereInput): Int!
+  clubFixtures(where: ClubFixtureWhereInput): Int!
+  stats(where: ClubStatsWhereInput): Int!
+  trainingSlots(where: TrainingSlotWhereInput): Int!
+  TournamentResult(where: TournamentResultWhereInput): Int!
+  PlayerRegistration(where: PlayerRegistrationWhereInput): Int!
+}
+
+type Owner {
+  id: Int!
+  address: String!
+  isAdmin: Boolean!
+  _count: OwnerCount
+  clubs(where: ClubWhereInput, orderBy: [ClubOrderByWithRelationInput!], cursor: ClubWhereUniqueInput, take: Int, skip: Int, distinct: [ClubScalarFieldEnum!]): [Club!]!
+  players(where: PlayerWhereInput, orderBy: [PlayerOrderByWithRelationInput!], cursor: PlayerWhereUniqueInput, take: Int, skip: Int, distinct: [PlayerScalarFieldEnum!]): [Player!]!
+  TournamentResult(where: TournamentResultWhereInput, orderBy: [TournamentResultOrderByWithRelationInput!], cursor: TournamentResultWhereUniqueInput, take: Int, skip: Int, distinct: [TournamentResultScalarFieldEnum!]): [TournamentResult!]!
+  PrizeClaim(where: PrizeClaimWhereInput, orderBy: [PrizeClaimOrderByWithRelationInput!], cursor: PrizeClaimWhereUniqueInput, take: Int, skip: Int, distinct: [PrizeClaimScalarFieldEnum!]): [PrizeClaim!]!
+}
+
+type OwnerCount {
+  clubs(where: ClubWhereInput): Int!
+  players(where: PlayerWhereInput): Int!
+  TournamentResult(where: TournamentResultWhereInput): Int!
+  PrizeClaim(where: PrizeClaimWhereInput): Int!
+}
+
+input ClubOrderByWithRelationInput {
+  id: SortOrder
+  seed: SortOrder
+  abbreviation: SortOrder
+  name: SortOrder
+  city: SortOrder
+  description: SortOrder
+  pattern: SortOrder
+  colours: SortOrder
+  ownerId: SortOrder
+  clubBadgeId: SortOrder
+  stadiumId: SortOrder
+  homeGameTimeId: SortOrder
+  lastAcademyIntake: SortOrder
+  isInactive: SortOrder
+  fflMembershipStatus: SortOrder
+  reactivationRealTimestamp: SortOrderInput
+  twitterAccountName: SortOrderInput
+  showTwitterAccountName: SortOrder
+  owner: OwnerOrderByWithRelationInput
+  clubBadge: ClubBadgeOrderByWithRelationInput
+  stadium: StadiumOrderByWithRelationInput
+  homeGameTime: AvailableHomeGameTimeOrderByWithRelationInput
+  kits: KitOrderByRelationAggregateInput
+  actions: ActionOrderByRelationAggregateInput
+  lineups: LineupOrderByRelationAggregateInput
+  players: PlayerOrderByRelationAggregateInput
+  originPlayers: PlayerOrderByRelationAggregateInput
+  clubTournaments: ClubTournamentOrderByRelationAggregateInput
+  clubFixtures: ClubFixtureOrderByRelationAggregateInput
+  stats: ClubStatsOrderByRelationAggregateInput
+  trainingSlots: TrainingSlotOrderByRelationAggregateInput
+  TournamentResult: TournamentResultOrderByRelationAggregateInput
+  PlayerRegistration: PlayerRegistrationOrderByRelationAggregateInput
+}
+
+enum SortOrder {
+  asc
+  desc
+}
+
+input SortOrderInput {
+  sort: SortOrder!
+  nulls: NullsOrder
+}
+
+enum NullsOrder {
+  first
+  last
+}
+
+input OwnerOrderByWithRelationInput {
+  id: SortOrder
+  address: SortOrder
+  isAdmin: SortOrder
+  clubs: ClubOrderByRelationAggregateInput
+  players: PlayerOrderByRelationAggregateInput
+  TournamentResult: TournamentResultOrderByRelationAggregateInput
+  PrizeClaim: PrizeClaimOrderByRelationAggregateInput
+}
+
+input ClubOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input PlayerOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input TournamentResultOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input PrizeClaimOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input ClubBadgeOrderByWithRelationInput {
+  id: SortOrder
+  data: SortOrder
+  club: ClubOrderByWithRelationInput
+}
+
+input StadiumOrderByWithRelationInput {
+  id: SortOrder
+  name: SortOrder
+  capacity: SortOrder
+  club: ClubOrderByRelationAggregateInput
+  stadiumStand: StadiumStandOrderByRelationAggregateInput
+}
+
+input StadiumStandOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input AvailableHomeGameTimeOrderByWithRelationInput {
+  id: SortOrder
+  realWorldGameTime: SortOrder
+  homeGameTime: SortOrder
+  Club: ClubOrderByRelationAggregateInput
+}
+
+input KitOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input ActionOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input LineupOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input ClubTournamentOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input ClubFixtureOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input ClubStatsOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input TrainingSlotOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input PlayerRegistrationOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input ClubWhereUniqueInput {
+  id: Int
+  clubBadgeId: Int
+  AND: [ClubWhereInput!]
+  OR: [ClubWhereInput!]
+  NOT: [ClubWhereInput!]
+  seed: StringFilter
+  abbreviation: StringFilter
+  name: StringFilter
+  city: StringFilter
+  description: StringFilter
+  pattern: StringFilter
+  colours: JsonFilter
+  ownerId: IntFilter
+  stadiumId: IntFilter
+  homeGameTimeId: IntFilter
+  lastAcademyIntake: IntFilter
+  isInactive: BoolFilter
+  fflMembershipStatus: IntFilter
+  reactivationRealTimestamp: FloatNullableFilter
+  twitterAccountName: StringNullableFilter
+  showTwitterAccountName: BoolFilter
+  owner: OwnerRelationFilter
+  clubBadge: ClubBadgeRelationFilter
+  stadium: StadiumRelationFilter
+  homeGameTime: AvailableHomeGameTimeNullableRelationFilter
+  kits: KitListRelationFilter
+  actions: ActionListRelationFilter
+  lineups: LineupListRelationFilter
+  players: PlayerListRelationFilter
+  originPlayers: PlayerListRelationFilter
+  clubTournaments: ClubTournamentListRelationFilter
+  clubFixtures: ClubFixtureListRelationFilter
+  stats: ClubStatsListRelationFilter
+  trainingSlots: TrainingSlotListRelationFilter
+  TournamentResult: TournamentResultListRelationFilter
+  PlayerRegistration: PlayerRegistrationListRelationFilter
+}
+
+enum ClubScalarFieldEnum {
+  id
+  seed
+  abbreviation
+  name
+  city
+  description
+  pattern
+  colours
+  ownerId
+  clubBadgeId
+  stadiumId
+  homeGameTimeId
+  lastAcademyIntake
+  isInactive
+  fflMembershipStatus
+  reactivationRealTimestamp
+  twitterAccountName
+  showTwitterAccountName
+}
+
+type Player {
+  id: String!
+  clubId: Int
+  ownerId: Int
+  originClubId: Int!
+  generationId: Int!
+  isAcademy: Boolean!
+  isReserve: Boolean!
+  isInitial: Boolean!
+  isReward: Boolean!
+  isTraining: Boolean!
+  isRetired: Boolean!
+  seed: String!
+  firstName: String!
+  lastName: String!
+  fullName: String!
+  firstSeasonId: Int!
+  assetId: Int
+  nationality: String!
+  heightMeters: Float!
+  potential: Int!
+  rarity: String!
+  creationRating: Float!
+  mintPrice: Float
+  isPartOfAcademyMerkleTree: Boolean!
+  merkleRoot: String
+  _count: PlayerCount
+  club(where: ClubWhereInput): Club
+  owner(where: OwnerWhereInput): Owner
+  originClub: Club!
+  firstSeason: Season!
+  playerAttributes(where: PlayerAttributesWhereInput, orderBy: [PlayerAttributesOrderByWithRelationInput!], cursor: PlayerAttributesWhereUniqueInput, take: Int, skip: Int, distinct: [PlayerAttributesScalarFieldEnum!]): [PlayerAttributes!]!
+  playerLineups(where: PlayerLineupWhereInput, orderBy: [PlayerLineupOrderByWithRelationInput!], cursor: PlayerLineupWhereUniqueInput, take: Int, skip: Int, distinct: [PlayerLineupScalarFieldEnum!]): [PlayerLineup!]!
+  positionalRating(where: PositionalRatingWhereInput, orderBy: [PositionalRatingOrderByWithRelationInput!], cursor: PositionalRatingWhereUniqueInput, take: Int, skip: Int, distinct: [PositionalRatingScalarFieldEnum!]): [PositionalRating!]!
+  imageUrls: PlayerImages
+  timesteppedPlayerAttributes: PlayerAttributes
+  registrationHistory: PlayerRegistrationHistory!
+}
+
+type PlayerCount {
+  playerAttributes(where: PlayerAttributesWhereInput): Int!
+  playerLineups(where: PlayerLineupWhereInput): Int!
+  actions(where: ActionWhereInput): Int!
+  positionalRating(where: PositionalRatingWhereInput): Int!
+  PlayerRegistration(where: PlayerRegistrationWhereInput): Int!
+}
+
+input PositionalRatingWhereInput {
+  AND: [PositionalRatingWhereInput!]
+  OR: [PositionalRatingWhereInput!]
+  NOT: [PositionalRatingWhereInput!]
+  id: IntFilter
+  position: StringFilter
+  playerId: StringFilter
+  relativeCompetence: IntFilter
+  rating: FloatFilter
+  timestamp: FloatFilter
+  isLatest: BoolFilter
+  player: PlayerRelationFilter
+}
+
+type Season {
+  id: Int!
+  name: String!
+  state: SeasonState!
+  startTimestamp: Float
+  preSeasonStartedAt: Float
+  endTimestamp: Float
+  fixtureScheduleRealTimestamp: Float
+  academyExpireAtRealTimestamp: Float
+  tournamentCompleteAtRealTimestamp: Float
+  numTeamsPromoted: Int!
+  _count: SeasonCount
+}
+
+type SeasonCount {
+  players(where: PlayerWhereInput): Int!
+  tournaments(where: TournamentWhereInput): Int!
+  playerRegistrationPlayerRecords(where: PlayerRegistrationPlayerRecordWhereInput): Int!
+  TournamentResult(where: TournamentResultWhereInput): Int!
+  PlayerAttributes(where: PlayerAttributesWhereInput): Int!
+  RegistrationWindow(where: RegistrationWindowWhereInput): Int!
+  Prize(where: PrizeWhereInput): Int!
+  PrizeClaim(where: PrizeClaimWhereInput): Int!
+}
+
+type PlayerAttributes {
+  id: Int!
+  age: Int!
+  leadership: Float!
+  condition: Float!
+  stamina: Float!
+  gamesSuspended: Int!
+  accumulatedYellows: Int!
+  isLatest: Boolean!
+  timestamp: Float!
+  footedness: String!
+  weakFootAbility: Int!
+  unlockedPotential: Int!
+  usedPotential: Int!
+  accumulatedMinutes: Float!
+  injuredUntilRealTimestamp: Float
+  injuredUntilGameTimestamp: Float
+  playerId: String!
+  seasonId: Int
+  player: Player!
+  season(where: SeasonWhereInput): Season
+}
+
+input PlayerAttributesOrderByWithRelationInput {
+  id: SortOrder
+  age: SortOrder
+  leadership: SortOrder
+  condition: SortOrder
+  stamina: SortOrder
+  gamesSuspended: SortOrder
+  accumulatedYellows: SortOrder
+  isLatest: SortOrder
+  timestamp: SortOrder
+  footedness: SortOrder
+  weakFootAbility: SortOrder
+  unlockedPotential: SortOrder
+  usedPotential: SortOrder
+  accumulatedMinutes: SortOrder
+  injuredUntilRealTimestamp: SortOrderInput
+  injuredUntilGameTimestamp: SortOrderInput
+  playerId: SortOrder
+  seasonId: SortOrderInput
+  player: PlayerOrderByWithRelationInput
+  season: SeasonOrderByWithRelationInput
+}
+
+input PlayerOrderByWithRelationInput {
+  id: SortOrder
+  clubId: SortOrderInput
+  ownerId: SortOrderInput
+  originClubId: SortOrder
+  generationId: SortOrder
+  isAcademy: SortOrder
+  isReserve: SortOrder
+  isInitial: SortOrder
+  isReward: SortOrder
+  isTraining: SortOrder
+  isRetired: SortOrder
+  seed: SortOrder
+  firstName: SortOrder
+  lastName: SortOrder
+  fullName: SortOrder
+  firstSeasonId: SortOrder
+  assetId: SortOrderInput
+  nationality: SortOrder
+  heightMeters: SortOrder
+  potential: SortOrder
+  rarity: SortOrder
+  creationRating: SortOrder
+  mintPrice: SortOrderInput
+  isPartOfAcademyMerkleTree: SortOrder
+  merkleRoot: SortOrderInput
+  club: ClubOrderByWithRelationInput
+  owner: OwnerOrderByWithRelationInput
+}
+
+input SeasonOrderByWithRelationInput {
+  id: SortOrder
+  name: SortOrder
+  state: SortOrder
+  startTimestamp: SortOrderInput
+  preSeasonStartedAt: SortOrderInput
+  endTimestamp: SortOrderInput
+  fixtureScheduleRealTimestamp: SortOrderInput
+  academyExpireAtRealTimestamp: SortOrderInput
+  tournamentCompleteAtRealTimestamp: SortOrderInput
+  numTeamsPromoted: SortOrder
+  players: PlayerOrderByRelationAggregateInput
+  tournaments: TournamentOrderByRelationAggregateInput
+  playerRegistrationPlayerRecords: PlayerRegistrationPlayerRecordOrderByRelationAggregateInput
+  TournamentResult: TournamentResultOrderByRelationAggregateInput
+  PlayerAttributes: PlayerAttributesOrderByRelationAggregateInput
+  RegistrationWindow: RegistrationWindowOrderByRelationAggregateInput
+  Prize: PrizeOrderByRelationAggregateInput
+  PrizeClaim: PrizeClaimOrderByRelationAggregateInput
+}
+
+input TournamentOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input PlayerRegistrationPlayerRecordOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input PlayerAttributesOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input RegistrationWindowOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input PrizeOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input PlayerAttributesWhereUniqueInput {
+  id: Int
+  AND: [PlayerAttributesWhereInput!]
+  OR: [PlayerAttributesWhereInput!]
+  NOT: [PlayerAttributesWhereInput!]
+  age: IntFilter
+  leadership: FloatFilter
+  condition: FloatFilter
+  stamina: FloatFilter
+  gamesSuspended: IntFilter
+  accumulatedYellows: IntFilter
+  isLatest: BoolFilter
+  timestamp: FloatFilter
+  footedness: StringFilter
+  weakFootAbility: IntFilter
+  unlockedPotential: IntFilter
+  usedPotential: IntFilter
+  accumulatedMinutes: FloatFilter
+  injuredUntilRealTimestamp: FloatNullableFilter
+  injuredUntilGameTimestamp: FloatNullableFilter
+  playerId: StringFilter
+  seasonId: IntNullableFilter
+  player: PlayerRelationFilter
+  season: SeasonNullableRelationFilter
+}
+
+enum PlayerAttributesScalarFieldEnum {
+  id
+  age
+  leadership
+  condition
+  stamina
+  gamesSuspended
+  accumulatedYellows
+  isLatest
+  timestamp
+  footedness
+  weakFootAbility
+  unlockedPotential
+  usedPotential
+  accumulatedMinutes
+  injuredUntilRealTimestamp
+  injuredUntilGameTimestamp
+  playerId
+  seasonId
+}
+
+type PlayerLineup {
+  id: Int!
+  playerId: String!
+  lineupId: Int!
+  formationSlotIndex: Int!
+  isCaptain: Boolean!
+  player: Player!
+  lineup: Lineup!
+}
+
+type Lineup {
+  id: Int!
+  clubId: Int!
+  isSelected: Boolean!
+  tacticsId: Int!
+  _count: LineupCount
+  club: Club!
+  tactics: Tactics!
+  playerLineups(where: PlayerLineupWhereInput, orderBy: [PlayerLineupOrderByWithRelationInput!], cursor: PlayerLineupWhereUniqueInput, take: Int, skip: Int, distinct: [PlayerLineupScalarFieldEnum!]): [PlayerLineup!]!
+}
+
+type LineupCount {
+  playerLineups(where: PlayerLineupWhereInput): Int!
+}
+
+type Tactics {
+  id: Int!
+  formationId: Int!
+  mentality: String!
+  formation: Formation!
+  lineup(where: LineupWhereInput): Lineup
+}
+
+type Formation {
+  id: Int!
+  name: String!
+  _count: FormationCount
+  tactics(where: TacticsWhereInput, orderBy: [TacticsOrderByWithRelationInput!], cursor: TacticsWhereUniqueInput, take: Int, skip: Int, distinct: [TacticsScalarFieldEnum!]): [Tactics!]!
+  slots(where: FormationSlotWhereInput, orderBy: [FormationSlotOrderByWithRelationInput!], cursor: FormationSlotWhereUniqueInput, take: Int, skip: Int, distinct: [FormationSlotScalarFieldEnum!]): [FormationSlot!]!
+}
+
+type FormationCount {
+  tactics(where: TacticsWhereInput): Int!
+  slots(where: FormationSlotWhereInput): Int!
+}
+
+input TacticsOrderByWithRelationInput {
+  id: SortOrder
+  formationId: SortOrder
+  mentality: SortOrder
+  formation: FormationOrderByWithRelationInput
+  lineup: LineupOrderByWithRelationInput
+}
+
+input FormationOrderByWithRelationInput {
+  id: SortOrder
+  name: SortOrder
+  tactics: TacticsOrderByRelationAggregateInput
+  slots: FormationSlotOrderByRelationAggregateInput
+}
+
+input TacticsOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input FormationSlotOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input LineupOrderByWithRelationInput {
+  id: SortOrder
+  clubId: SortOrder
+  isSelected: SortOrder
+  tacticsId: SortOrder
+  club: ClubOrderByWithRelationInput
+  tactics: TacticsOrderByWithRelationInput
+  playerLineups: PlayerLineupOrderByRelationAggregateInput
+}
+
+input PlayerLineupOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input TacticsWhereUniqueInput {
+  id: Int
+  AND: [TacticsWhereInput!]
+  OR: [TacticsWhereInput!]
+  NOT: [TacticsWhereInput!]
+  formationId: IntFilter
+  mentality: StringFilter
+  formation: FormationRelationFilter
+  lineup: LineupNullableRelationFilter
+}
+
+enum TacticsScalarFieldEnum {
+  id
+  formationId
+  mentality
+}
+
+type FormationSlot {
+  id: Int!
+  formationId: Int!
+  slotIndex: Int!
+  pitchPosition: String!
+  formation: Formation!
+}
+
+input FormationSlotOrderByWithRelationInput {
+  id: SortOrder
+  formationId: SortOrder
+  slotIndex: SortOrder
+  pitchPosition: SortOrder
+  formation: FormationOrderByWithRelationInput
+}
+
+input FormationSlotWhereUniqueInput {
+  id: Int
+  AND: [FormationSlotWhereInput!]
+  OR: [FormationSlotWhereInput!]
+  NOT: [FormationSlotWhereInput!]
+  formationId: IntFilter
+  slotIndex: IntFilter
+  pitchPosition: StringFilter
+  formation: FormationRelationFilter
+}
+
+enum FormationSlotScalarFieldEnum {
+  id
+  formationId
+  slotIndex
+  pitchPosition
+}
+
+input PlayerLineupOrderByWithRelationInput {
+  id: SortOrder
+  playerId: SortOrder
+  lineupId: SortOrder
+  formationSlotIndex: SortOrder
+  isCaptain: SortOrder
+  player: PlayerOrderByWithRelationInput
+  lineup: LineupOrderByWithRelationInput
+}
+
+input PlayerLineupWhereUniqueInput {
+  id: Int
+  AND: [PlayerLineupWhereInput!]
+  OR: [PlayerLineupWhereInput!]
+  NOT: [PlayerLineupWhereInput!]
+  playerId: StringFilter
+  lineupId: IntFilter
+  formationSlotIndex: IntFilter
+  isCaptain: BoolFilter
+  player: PlayerRelationFilter
+  lineup: LineupRelationFilter
+}
+
+enum PlayerLineupScalarFieldEnum {
+  id
+  playerId
+  lineupId
+  formationSlotIndex
+  isCaptain
+}
+
+type PositionalRating {
+  id: Int!
+  position: String!
+  playerId: String!
+  relativeCompetence: Int!
+  rating: Float!
+  timestamp: Float!
+  isLatest: Boolean!
+  player: Player!
+}
+
+input PositionalRatingOrderByWithRelationInput {
+  id: SortOrder
+  position: SortOrder
+  playerId: SortOrder
+  relativeCompetence: SortOrder
+  rating: SortOrder
+  timestamp: SortOrder
+  isLatest: SortOrder
+  player: PlayerOrderByWithRelationInput
+}
+
+input PositionalRatingWhereUniqueInput {
+  id: Int
+  AND: [PositionalRatingWhereInput!]
+  OR: [PositionalRatingWhereInput!]
+  NOT: [PositionalRatingWhereInput!]
+  position: StringFilter
+  playerId: StringFilter
+  relativeCompetence: IntFilter
+  rating: FloatFilter
+  timestamp: FloatFilter
+  isLatest: BoolFilter
+  player: PlayerRelationFilter
+}
+
+enum PositionalRatingScalarFieldEnum {
+  id
+  position
+  playerId
+  relativeCompetence
+  rating
+  timestamp
+  isLatest
+}
+
+type PlayerImages {
+  player: String
+  card: String
+  thumb: String
+}
+
+type PlayerRegistrationHistory {
+  careerRecord: RegistrationRecord!
+  registrationRecords: [PlayerRegistrationHistoryEntry!]!
+}
+
+type RegistrationRecord {
+  appearances: Float!
+  goalsScored: Float!
+  sessionsTrained: Float!
+}
+
+type PlayerRegistrationHistoryEntry {
+  club: Float!
+  clubName: String!
+  joined: RegistrationDateInfo!
+  left: RegistrationDateInfo
+  registrationRecord: RegistrationRecord!
+}
+
+type RegistrationDateInfo {
+  timestamp: Float!
+  seasonName: String!
+}
+
+input PlayerWhereUniqueInput {
+  id: String
+  assetId: Int
+  AND: [PlayerWhereInput!]
+  OR: [PlayerWhereInput!]
+  NOT: [PlayerWhereInput!]
+  clubId: IntNullableFilter
+  ownerId: IntNullableFilter
+  originClubId: IntFilter
+  generationId: IntFilter
+  isAcademy: BoolFilter
+  isReserve: BoolFilter
+  isInitial: BoolFilter
+  isReward: BoolFilter
+  isTraining: BoolFilter
+  isRetired: BoolFilter
+  seed: StringFilter
+  firstName: StringFilter
+  lastName: StringFilter
+  fullName: StringFilter
+  firstSeasonId: IntFilter
+  nationality: StringFilter
+  heightMeters: FloatFilter
+  potential: IntFilter
+  rarity: StringFilter
+  creationRating: FloatFilter
+  mintPrice: FloatNullableFilter
+  isPartOfAcademyMerkleTree: BoolFilter
+  merkleRoot: StringNullableFilter
+  club: ClubNullableRelationFilter
+  owner: OwnerNullableRelationFilter
+}
+
+enum PlayerScalarFieldEnum {
+  id
+  clubId
+  ownerId
+  originClubId
+  generationId
+  isAcademy
+  isReserve
+  isInitial
+  isReward
+  isTraining
+  isRetired
+  seed
+  firstName
+  lastName
+  fullName
+  firstSeasonId
+  assetId
+  nationality
+  heightMeters
+  potential
+  rarity
+  creationRating
+  images
+  mintPrice
+  isPartOfAcademyMerkleTree
+  merkleRoot
+}
+
+type TournamentResult {
+  id: Int!
+  tournamentId: Int!
+  seasonId: Int!
+  clubId: Int!
+  position: Int!
+  ownerId: Int!
+  isInactive: Boolean!
+  isPrizeEligible: Boolean!
+  createdAt: DateTime!
+  _count: TournamentResultCount
+  tournament: Tournament!
+  season: Season!
+  club: Club!
+  owner: Owner!
+  PrizeAssignment(where: PrizeAssignmentWhereInput, orderBy: [PrizeAssignmentOrderByWithRelationInput!], cursor: PrizeAssignmentWhereUniqueInput, take: Int, skip: Int, distinct: [PrizeAssignmentScalarFieldEnum!]): [PrizeAssignment!]!
+}
+
+type TournamentResultCount {
+  PrizeAssignment(where: PrizeAssignmentWhereInput): Int!
+}
+
+type Tournament {
+  id: Int!
+  competitionId: Int!
+  seasonId: Int!
+  type: String!
+  name: String!
+  seed: String!
+  instance: String!
+  state: TournamentState!
+  createdAt: Float!
+  startTimestamp: Float
+  _count: TournamentCount
+  competition: Competition!
+  season: Season!
+  clubTournaments(where: ClubTournamentWhereInput, orderBy: [ClubTournamentOrderByWithRelationInput!], cursor: ClubTournamentWhereUniqueInput, take: Int, skip: Int, distinct: [ClubTournamentScalarFieldEnum!]): [ClubTournament!]!
+  fixtures(where: FixtureWhereInput, orderBy: [FixtureOrderByWithRelationInput!], cursor: FixtureWhereUniqueInput, take: Int, skip: Int, distinct: [FixtureScalarFieldEnum!]): [Fixture!]!
+  TournamentResult(where: TournamentResultWhereInput, orderBy: [TournamentResultOrderByWithRelationInput!], cursor: TournamentResultWhereUniqueInput, take: Int, skip: Int, distinct: [TournamentResultScalarFieldEnum!]): [TournamentResult!]!
+  mostAppearances(numberRequired: Int!): [ClubPlayerRecord!]!
+  topScorers(numberRequired: Int!): [ClubPlayerRecord!]!
+}
+
+type TournamentCount {
+  clubTournaments(where: ClubTournamentWhereInput): Int!
+  fixtures(where: FixtureWhereInput): Int!
+  TournamentResult(where: TournamentResultWhereInput): Int!
+}
+
+type Competition {
+  id: Int!
+  type: String!
+  name: String!
+  seed: String!
+  scheduler: JSON!
+  divisionId: Int!
+  leagueIndex: Int
+  parentCompetitionId: Int
+  _count: CompetitionCount
+  division: Division!
+  promotionSelectorsFrom(where: PromotionSelectorWhereInput, orderBy: [PromotionSelectorOrderByWithRelationInput!], cursor: PromotionSelectorWhereUniqueInput, take: Int, skip: Int, distinct: [PromotionSelectorScalarFieldEnum!]): [PromotionSelector!]!
+  tournaments(where: TournamentWhereInput, orderBy: [TournamentOrderByWithRelationInput!], cursor: TournamentWhereUniqueInput, take: Int, skip: Int, distinct: [TournamentScalarFieldEnum!]): [Tournament!]!
+}
+
+type CompetitionCount {
+  promotionSelectorsFrom(where: PromotionSelectorWhereInput): Int!
+  tournaments(where: TournamentWhereInput): Int!
+}
+
+type Division {
+  id: Int!
+  name: String!
+  tier: Int!
+  _count: DivisionCount
+  competitions(where: CompetitionWhereInput, orderBy: [CompetitionOrderByWithRelationInput!], cursor: CompetitionWhereUniqueInput, take: Int, skip: Int, distinct: [CompetitionScalarFieldEnum!]): [Competition!]!
+  Prize(where: PrizeWhereInput, orderBy: [PrizeOrderByWithRelationInput!], cursor: PrizeWhereUniqueInput, take: Int, skip: Int, distinct: [PrizeScalarFieldEnum!]): [Prize!]!
+}
+
+type DivisionCount {
+  competitions(where: CompetitionWhereInput): Int!
+  Prize(where: PrizeWhereInput): Int!
+}
+
+input CompetitionOrderByWithRelationInput {
+  id: SortOrder
+  type: SortOrder
+  name: SortOrder
+  seed: SortOrder
+  scheduler: SortOrder
+  divisionId: SortOrder
+  leagueIndex: SortOrderInput
+  parentCompetitionId: SortOrderInput
+  division: DivisionOrderByWithRelationInput
+  promotionSelectorsFrom: PromotionSelectorOrderByRelationAggregateInput
+  tournaments: TournamentOrderByRelationAggregateInput
+}
+
+input DivisionOrderByWithRelationInput {
+  id: SortOrder
+  name: SortOrder
+  tier: SortOrder
+  competitions: CompetitionOrderByRelationAggregateInput
+  Prize: PrizeOrderByRelationAggregateInput
+}
+
+input CompetitionOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input PromotionSelectorOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input CompetitionWhereUniqueInput {
+  id: Int
+  AND: [CompetitionWhereInput!]
+  OR: [CompetitionWhereInput!]
+  NOT: [CompetitionWhereInput!]
+  type: StringFilter
+  name: StringFilter
+  seed: StringFilter
+  scheduler: JsonFilter
+  divisionId: IntFilter
+  leagueIndex: IntNullableFilter
+  parentCompetitionId: IntNullableFilter
+  division: DivisionRelationFilter
+  promotionSelectorsFrom: PromotionSelectorListRelationFilter
+  tournaments: TournamentListRelationFilter
+}
+
+enum CompetitionScalarFieldEnum {
+  id
+  type
+  name
+  seed
+  scheduler
+  divisionId
+  leagueIndex
+  parentCompetitionId
+}
+
+type Prize {
+  id: Int!
+  type: PrizeType!
+  contractAddress: String
+  seasonId: Int!
+  divisionId: Int!
+  assignedAt: DateTime
+  description: String
+  distributionType: String
+  _count: PrizeCount
+  season: Season!
+  division: Division!
+  values(where: PrizeValueWhereInput, orderBy: [PrizeValueOrderByWithRelationInput!], cursor: PrizeValueWhereUniqueInput, take: Int, skip: Int, distinct: [PrizeValueScalarFieldEnum!]): [PrizeValue!]!
+  PrizeAssignment(where: PrizeAssignmentWhereInput, orderBy: [PrizeAssignmentOrderByWithRelationInput!], cursor: PrizeAssignmentWhereUniqueInput, take: Int, skip: Int, distinct: [PrizeAssignmentScalarFieldEnum!]): [PrizeAssignment!]!
+}
+
+type PrizeCount {
+  values(where: PrizeValueWhereInput): Int!
+  PrizeAssignment(where: PrizeAssignmentWhereInput): Int!
+}
+
+type PrizeValue {
+  id: Int!
+  prizeId: Int!
+  value: String!
+  createdAt: DateTime!
+  prize: Prize!
+}
+
+input PrizeValueOrderByWithRelationInput {
+  id: SortOrder
+  prizeId: SortOrder
+  value: SortOrder
+  createdAt: SortOrder
+  prize: PrizeOrderByWithRelationInput
+}
+
+input PrizeOrderByWithRelationInput {
+  id: SortOrder
+  type: SortOrder
+  contractAddress: SortOrderInput
+  seasonId: SortOrder
+  divisionId: SortOrder
+  assignedAt: SortOrderInput
+  description: SortOrderInput
+  distributionType: SortOrderInput
+  season: SeasonOrderByWithRelationInput
+  division: DivisionOrderByWithRelationInput
+  values: PrizeValueOrderByRelationAggregateInput
+  PrizeAssignment: PrizeAssignmentOrderByRelationAggregateInput
+}
+
+input PrizeValueOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input PrizeAssignmentOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input PrizeValueWhereUniqueInput {
+  id: Int
+  AND: [PrizeValueWhereInput!]
+  OR: [PrizeValueWhereInput!]
+  NOT: [PrizeValueWhereInput!]
+  prizeId: IntFilter
+  value: StringFilter
+  createdAt: DateTimeFilter
+  prize: PrizeRelationFilter
+}
+
+enum PrizeValueScalarFieldEnum {
+  id
+  prizeId
+  value
+  createdAt
+}
+
+type PrizeAssignment {
+  id: Int!
+  tournamentResultId: Int!
+  prizeClaimId: Int
+  prizeId: Int!
+  value: String!
+  status: PrizeAssignmentStatus!
+  createdAt: DateTime!
+  TournamentResult: TournamentResult!
+  PrizeClaim(where: PrizeClaimWhereInput): PrizeClaim
+  Prize: Prize!
+}
+
+type PrizeClaim {
+  id: Int!
+  ownerId: Int!
+  seasonId: Int!
+  contractAddress: String!
+  claimValue: String!
+  merkleRoot: String
+  status: PrizeClaimStatus!
+  expiresAtRealTimestamp: Float
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  _count: PrizeClaimCount
+  Owner: Owner!
+  PrizeAssignment(where: PrizeAssignmentWhereInput, orderBy: [PrizeAssignmentOrderByWithRelationInput!], cursor: PrizeAssignmentWhereUniqueInput, take: Int, skip: Int, distinct: [PrizeAssignmentScalarFieldEnum!]): [PrizeAssignment!]!
+  Season: Season!
+}
+
+type PrizeClaimCount {
+  PrizeAssignment(where: PrizeAssignmentWhereInput): Int!
+}
+
+input PrizeAssignmentOrderByWithRelationInput {
+  id: SortOrder
+  tournamentResultId: SortOrder
+  prizeClaimId: SortOrderInput
+  prizeId: SortOrder
+  value: SortOrder
+  status: SortOrder
+  createdAt: SortOrder
+  TournamentResult: TournamentResultOrderByWithRelationInput
+  PrizeClaim: PrizeClaimOrderByWithRelationInput
+  Prize: PrizeOrderByWithRelationInput
+}
+
+input TournamentResultOrderByWithRelationInput {
+  id: SortOrder
+  tournamentId: SortOrder
+  seasonId: SortOrder
+  clubId: SortOrder
+  position: SortOrder
+  ownerId: SortOrder
+  isInactive: SortOrder
+  isPrizeEligible: SortOrder
+  createdAt: SortOrder
+  tournament: TournamentOrderByWithRelationInput
+  season: SeasonOrderByWithRelationInput
+  club: ClubOrderByWithRelationInput
+  owner: OwnerOrderByWithRelationInput
+  PrizeAssignment: PrizeAssignmentOrderByRelationAggregateInput
+}
+
+input TournamentOrderByWithRelationInput {
+  id: SortOrder
+  competitionId: SortOrder
+  seasonId: SortOrder
+  type: SortOrder
+  name: SortOrder
+  seed: SortOrder
+  instance: SortOrder
+  state: SortOrder
+  createdAt: SortOrder
+  startTimestamp: SortOrderInput
+  competition: CompetitionOrderByWithRelationInput
+  season: SeasonOrderByWithRelationInput
+  clubTournaments: ClubTournamentOrderByRelationAggregateInput
+  fixtures: FixtureOrderByRelationAggregateInput
+  TournamentResult: TournamentResultOrderByRelationAggregateInput
+}
+
+input FixtureOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input PrizeClaimOrderByWithRelationInput {
+  id: SortOrder
+  ownerId: SortOrder
+  seasonId: SortOrder
+  contractAddress: SortOrder
+  claimValue: SortOrder
+  merkleRoot: SortOrderInput
+  status: SortOrder
+  expiresAtRealTimestamp: SortOrderInput
+  createdAt: SortOrder
+  updatedAt: SortOrder
+  Owner: OwnerOrderByWithRelationInput
+  PrizeAssignment: PrizeAssignmentOrderByRelationAggregateInput
+  Season: SeasonOrderByWithRelationInput
+}
+
+input PrizeAssignmentWhereUniqueInput {
+  id: Int
+  AND: [PrizeAssignmentWhereInput!]
+  OR: [PrizeAssignmentWhereInput!]
+  NOT: [PrizeAssignmentWhereInput!]
+  tournamentResultId: IntFilter
+  prizeClaimId: IntNullableFilter
+  prizeId: IntFilter
+  value: StringFilter
+  status: EnumPrizeAssignmentStatusFilter
+  createdAt: DateTimeFilter
+  TournamentResult: TournamentResultRelationFilter
+  PrizeClaim: PrizeClaimNullableRelationFilter
+  Prize: PrizeRelationFilter
+}
+
+enum PrizeAssignmentScalarFieldEnum {
+  id
+  tournamentResultId
+  prizeClaimId
+  prizeId
+  value
+  status
+  createdAt
+}
+
+input PrizeWhereUniqueInput {
+  id: Int
+  AND: [PrizeWhereInput!]
+  OR: [PrizeWhereInput!]
+  NOT: [PrizeWhereInput!]
+  type: EnumPrizeTypeFilter
+  contractAddress: StringNullableFilter
+  seasonId: IntFilter
+  divisionId: IntFilter
+  assignedAt: DateTimeNullableFilter
+  description: StringNullableFilter
+  distributionType: StringNullableFilter
+  season: SeasonRelationFilter
+  division: DivisionRelationFilter
+  values: PrizeValueListRelationFilter
+  PrizeAssignment: PrizeAssignmentListRelationFilter
+}
+
+enum PrizeScalarFieldEnum {
+  id
+  type
+  contractAddress
+  seasonId
+  divisionId
+  assignedAt
+  description
+  distributionType
+}
+
+type PromotionSelector {
+  id: Int!
+  type: String!
+  competitionIdFrom: Int!
+  competitionIdTo: Int!
+  start: JSON!
+  end: JSON!
+  competitionFrom: Competition!
+}
+
+input PromotionSelectorOrderByWithRelationInput {
+  id: SortOrder
+  type: SortOrder
+  competitionIdFrom: SortOrder
+  competitionIdTo: SortOrder
+  start: SortOrder
+  end: SortOrder
+  competitionFrom: CompetitionOrderByWithRelationInput
+}
+
+input PromotionSelectorWhereUniqueInput {
+  id: Int
+  AND: [PromotionSelectorWhereInput!]
+  OR: [PromotionSelectorWhereInput!]
+  NOT: [PromotionSelectorWhereInput!]
+  type: StringFilter
+  competitionIdFrom: IntFilter
+  competitionIdTo: IntFilter
+  start: JsonFilter
+  end: JsonFilter
+  competitionFrom: CompetitionRelationFilter
+}
+
+enum PromotionSelectorScalarFieldEnum {
+  id
+  type
+  competitionIdFrom
+  competitionIdTo
+  start
+  end
+}
+
+input TournamentWhereUniqueInput {
+  id: Int
+  AND: [TournamentWhereInput!]
+  OR: [TournamentWhereInput!]
+  NOT: [TournamentWhereInput!]
+  competitionId: IntFilter
+  seasonId: IntFilter
+  type: StringFilter
+  name: StringFilter
+  seed: StringFilter
+  instance: StringFilter
+  state: EnumTournamentStateFilter
+  createdAt: FloatFilter
+  startTimestamp: FloatNullableFilter
+  competition: CompetitionRelationFilter
+  season: SeasonRelationFilter
+  clubTournaments: ClubTournamentListRelationFilter
+  fixtures: FixtureListRelationFilter
+  TournamentResult: TournamentResultListRelationFilter
+}
+
+enum TournamentScalarFieldEnum {
+  id
+  competitionId
+  seasonId
+  type
+  name
+  seed
+  instance
+  state
+  createdAt
+  startTimestamp
+}
+
+type ClubTournament {
+  id: Int!
+  tournamentId: Int!
+  clubId: Int!
+  position: Int!
+  clubStatsId: Int!
+  tournament: Tournament!
+  club: Club!
+  clubStats: ClubStats!
+}
+
+type ClubStats {
+  id: Int!
+  clubId: Int!
+  games: Int!
+  wins: Int!
+  draws: Int!
+  losses: Int!
+  points: Int!
+  possession: Float!
+  assists: Int!
+  goals: Int!
+  goalsAgainst: Int!
+  shotsOnTarget: Int!
+  shotsOffTarget: Int!
+  passes: Int!
+  yellowCards: Int!
+  redCards: Int!
+  corners: Int!
+  possessionWon: Int!
+  gkSaves: Int!
+  fouls: Int!
+  freeKicks: Int!
+  offsides: Int!
+  freeKicksScored: Int!
+  crosses: Int!
+  attemptedPasses: Int!
+  blocks: Int!
+  consecutivePreGameLineupSet: Int!
+  consecutiveInGameLineupSet: Int!
+  consecutiveNotMakingPreGameLineupSet: Int!
+  consecutiveNotMakingInGameLineupSet: Int!
+  lastPreGameLineupSetTimestamp: Float!
+  lastInGameLineupSetTimestamp: Float!
+  shotsBlocked: Int!
+  totalShots: Int!
+  shotsFromInsideTheBox: Int!
+  normalShots: Int!
+  backHeelShots: Int!
+  divingHeaderShots: Int!
+  halfVolleyShots: Int!
+  volleyShots: Int!
+  lobShots: Int!
+  overheadKickShots: Int!
+  completedPasses: Int!
+  interceptedPasses: Int!
+  groundPasses: Int!
+  offsidePasses: Int!
+  tacklesExecuted: Int!
+  tacklesReceived: Int!
+  clearances: Int!
+  interceptions: Int!
+  failedInterceptions: Int!
+  fiftyFiftiesWon: Int!
+  fiftyFiftiesLost: Int!
+  duelsWon: Int!
+  duelsLost: Int!
+  attemptedDribbles: Int!
+  completedDribbles: Int!
+  carries: Int!
+  possessionInfo: JSON!
+  penaltiesWon: Int!
+  penaltiesConceded: Int!
+  penaltiesScored: Int!
+  penaltiesMissed: Int!
+  penaltiesSaved: Int!
+  club: Club!
+  clubTournament(where: ClubTournamentWhereInput): ClubTournament
+  clubFixture(where: ClubFixtureWhereInput): ClubFixture
+  shotAccuracy: Float
+  passAccuracy: Float
+  dribbleSuccessRate: Float
+  lobbedPasses: Int
+  shotsFromOutsideTheBox: Int
+  firstHalfPossession: Float
+  secondHalfPossession: Float
+}
+
+type ClubFixture {
+  id: Int!
+  date: Float!
+  clubId: Int!
+  fixtureId: Int!
+  isHome: Boolean!
+  clubStatsId: Int!
+  dummy: String
+  club: Club!
+  fixture: Fixture!
+  clubStats: ClubStats!
+}
+
+type Fixture {
+  id: Int!
+  date: Float!
+  seed: String!
+  isNeutralVenue: Boolean!
+  matchId: String
+  roundIndex: Int!
+  fixtureIndex: Int!
+  tournamentId: Int!
+  state: String!
+  realWorldTimestamp: Float!
+  inGameTimestamp: Float!
+  _count: FixtureCount
+  match(where: MatchWhereInput): Match
+  tournament: Tournament!
+  clubFixtures(where: ClubFixtureWhereInput, orderBy: [ClubFixtureOrderByWithRelationInput!], cursor: ClubFixtureWhereUniqueInput, take: Int, skip: Int, distinct: [ClubFixtureScalarFieldEnum!]): [ClubFixture!]!
+}
+
+type FixtureCount {
+  clubFixtures(where: ClubFixtureWhereInput): Int!
+}
+
+type Match {
+  id: String!
+  seed: String!
+  startTimestamp: Float!
+  initialParams: JSON!
+  homeTeam: JSON!
+  awayTeam: JSON!
+  players: JSON!
+  penaltyShootoutState: JSON!
+  state: Int!
+  possessionClubId: Int!
+  lastTeamToTouchBall: Int!
+  possessionPlayerId: String
+  ballLocation: JSON!
+  underPressure: Boolean!
+  frames: JSON!
+  periodStates: JSON!
+  grid: JSON!
+  isResultProcessed: Boolean!
+  timestamp: Float!
+  keyEvents: JSON!
+  activeEvents: JSON!
+  referee: JSON!
+  pendingTacticalChanges: JSON!
+  pendingAdminChanges: JSON!
+  possessionIntervalMinutes: [Int!]!
+  possessionIntervalMinutesCompleted: JSON!
+  digest: String!
+  ratingsSummary: JSON!
+  _count: MatchCount
+  fixture(where: FixtureWhereInput): Fixture
+  matchChanges(where: MatchChangeWhereInput, orderBy: [MatchChangeOrderByWithRelationInput!], cursor: MatchChangeWhereUniqueInput, take: Int, skip: Int, distinct: [MatchChangeScalarFieldEnum!]): [MatchChange!]!
+  getStartTimestamp(period: Float!): Float
+}
+
+type MatchCount {
+  matchChanges(where: MatchChangeWhereInput): Int!
+}
+
+type MatchChange {
+  id: Int!
+  timestampReceived: Float!
+  changes: JSON!
+  digest: String!
+  matchId: String!
+  createdAt: DateTime!
+  match: Match!
+}
+
+input MatchChangeOrderByWithRelationInput {
+  id: SortOrder
+  timestampReceived: SortOrder
+  changes: SortOrder
+  digest: SortOrder
+  matchId: SortOrder
+  createdAt: SortOrder
+  match: MatchOrderByWithRelationInput
+}
+
+input MatchOrderByWithRelationInput {
+  id: SortOrder
+  seed: SortOrder
+  startTimestamp: SortOrder
+  initialParams: SortOrder
+  homeTeam: SortOrder
+  awayTeam: SortOrder
+  players: SortOrder
+  penaltyShootoutState: SortOrder
+  state: SortOrder
+  possessionClubId: SortOrder
+  lastTeamToTouchBall: SortOrder
+  possessionPlayerId: SortOrderInput
+  ballLocation: SortOrder
+  underPressure: SortOrder
+  frames: SortOrder
+  periodStates: SortOrder
+  grid: SortOrder
+  isResultProcessed: SortOrder
+  timestamp: SortOrder
+  keyEvents: SortOrder
+  activeEvents: SortOrder
+  referee: SortOrder
+  pendingTacticalChanges: SortOrder
+  pendingAdminChanges: SortOrder
+  possessionIntervalMinutes: SortOrder
+  possessionIntervalMinutesCompleted: SortOrder
+  digest: SortOrder
+  ratingsSummary: SortOrder
+  fixture: FixtureOrderByWithRelationInput
+  matchChanges: MatchChangeOrderByRelationAggregateInput
+}
+
+input FixtureOrderByWithRelationInput {
+  id: SortOrder
+  date: SortOrder
+  seed: SortOrder
+  isNeutralVenue: SortOrder
+  matchId: SortOrderInput
+  roundIndex: SortOrder
+  fixtureIndex: SortOrder
+  tournamentId: SortOrder
+  state: SortOrder
+  realWorldTimestamp: SortOrder
+  inGameTimestamp: SortOrder
+  match: MatchOrderByWithRelationInput
+  tournament: TournamentOrderByWithRelationInput
+  clubFixtures: ClubFixtureOrderByRelationAggregateInput
+}
+
+input MatchChangeOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input MatchChangeWhereUniqueInput {
+  id: Int
+  AND: [MatchChangeWhereInput!]
+  OR: [MatchChangeWhereInput!]
+  NOT: [MatchChangeWhereInput!]
+  timestampReceived: FloatFilter
+  changes: JsonFilter
+  digest: StringFilter
+  matchId: StringFilter
+  createdAt: DateTimeFilter
+  match: MatchRelationFilter
+}
+
+enum MatchChangeScalarFieldEnum {
+  id
+  timestampReceived
+  changes
+  digest
+  matchId
+  createdAt
+}
+
+input ClubFixtureOrderByWithRelationInput {
+  id: SortOrder
+  date: SortOrder
+  clubId: SortOrder
+  fixtureId: SortOrder
+  isHome: SortOrder
+  clubStatsId: SortOrder
+  dummy: SortOrderInput
+  club: ClubOrderByWithRelationInput
+  fixture: FixtureOrderByWithRelationInput
+  clubStats: ClubStatsOrderByWithRelationInput
+}
+
+input ClubStatsOrderByWithRelationInput {
+  id: SortOrder
+  clubId: SortOrder
+  games: SortOrder
+  wins: SortOrder
+  draws: SortOrder
+  losses: SortOrder
+  points: SortOrder
+  possession: SortOrder
+  assists: SortOrder
+  goals: SortOrder
+  goalsAgainst: SortOrder
+  shotsOnTarget: SortOrder
+  shotsOffTarget: SortOrder
+  passes: SortOrder
+  yellowCards: SortOrder
+  redCards: SortOrder
+  corners: SortOrder
+  possessionWon: SortOrder
+  gkSaves: SortOrder
+  fouls: SortOrder
+  freeKicks: SortOrder
+  offsides: SortOrder
+  freeKicksScored: SortOrder
+  crosses: SortOrder
+  attemptedPasses: SortOrder
+  blocks: SortOrder
+  consecutivePreGameLineupSet: SortOrder
+  consecutiveInGameLineupSet: SortOrder
+  consecutiveNotMakingPreGameLineupSet: SortOrder
+  consecutiveNotMakingInGameLineupSet: SortOrder
+  lastPreGameLineupSetTimestamp: SortOrder
+  lastInGameLineupSetTimestamp: SortOrder
+  shotsBlocked: SortOrder
+  totalShots: SortOrder
+  shotsFromInsideTheBox: SortOrder
+  normalShots: SortOrder
+  backHeelShots: SortOrder
+  divingHeaderShots: SortOrder
+  halfVolleyShots: SortOrder
+  volleyShots: SortOrder
+  lobShots: SortOrder
+  overheadKickShots: SortOrder
+  completedPasses: SortOrder
+  interceptedPasses: SortOrder
+  groundPasses: SortOrder
+  offsidePasses: SortOrder
+  tacklesExecuted: SortOrder
+  tacklesReceived: SortOrder
+  clearances: SortOrder
+  interceptions: SortOrder
+  failedInterceptions: SortOrder
+  fiftyFiftiesWon: SortOrder
+  fiftyFiftiesLost: SortOrder
+  duelsWon: SortOrder
+  duelsLost: SortOrder
+  attemptedDribbles: SortOrder
+  completedDribbles: SortOrder
+  carries: SortOrder
+  possessionInfo: SortOrder
+  penaltiesWon: SortOrder
+  penaltiesConceded: SortOrder
+  penaltiesScored: SortOrder
+  penaltiesMissed: SortOrder
+  penaltiesSaved: SortOrder
+  club: ClubOrderByWithRelationInput
+  clubTournament: ClubTournamentOrderByWithRelationInput
+  clubFixture: ClubFixtureOrderByWithRelationInput
+}
+
+input ClubTournamentOrderByWithRelationInput {
+  id: SortOrder
+  tournamentId: SortOrder
+  clubId: SortOrder
+  position: SortOrder
+  clubStatsId: SortOrder
+  tournament: TournamentOrderByWithRelationInput
+  club: ClubOrderByWithRelationInput
+  clubStats: ClubStatsOrderByWithRelationInput
+}
+
+input ClubFixtureWhereUniqueInput {
+  id: Int
+  clubStatsId: Int
+  AND: [ClubFixtureWhereInput!]
+  OR: [ClubFixtureWhereInput!]
+  NOT: [ClubFixtureWhereInput!]
+  date: FloatFilter
+  clubId: IntFilter
+  fixtureId: IntFilter
+  isHome: BoolFilter
+  dummy: StringNullableFilter
+  club: ClubRelationFilter
+  fixture: FixtureRelationFilter
+  clubStats: ClubStatsRelationFilter
+}
+
+enum ClubFixtureScalarFieldEnum {
+  id
+  date
+  clubId
+  fixtureId
+  isHome
+  clubStatsId
+  dummy
+}
+
+input ClubTournamentWhereUniqueInput {
+  id: Int
+  clubStatsId: Int
+  AND: [ClubTournamentWhereInput!]
+  OR: [ClubTournamentWhereInput!]
+  NOT: [ClubTournamentWhereInput!]
+  tournamentId: IntFilter
+  clubId: IntFilter
+  position: IntFilter
+  tournament: TournamentRelationFilter
+  club: ClubRelationFilter
+  clubStats: ClubStatsRelationFilter
+}
+
+enum ClubTournamentScalarFieldEnum {
+  id
+  tournamentId
+  clubId
+  position
+  clubStatsId
+}
+
+input FixtureWhereUniqueInput {
+  id: Int
+  matchId: String
+  AND: [FixtureWhereInput!]
+  OR: [FixtureWhereInput!]
+  NOT: [FixtureWhereInput!]
+  date: FloatFilter
+  seed: StringFilter
+  isNeutralVenue: BoolFilter
+  roundIndex: IntFilter
+  fixtureIndex: IntFilter
+  tournamentId: IntFilter
+  state: StringFilter
+  realWorldTimestamp: FloatFilter
+  inGameTimestamp: FloatFilter
+  match: MatchNullableRelationFilter
+  tournament: TournamentRelationFilter
+  clubFixtures: ClubFixtureListRelationFilter
+}
+
+enum FixtureScalarFieldEnum {
+  id
+  date
+  seed
+  isNeutralVenue
+  matchId
+  roundIndex
+  fixtureIndex
+  tournamentId
+  state
+  realWorldTimestamp
+  inGameTimestamp
+}
+
+input TournamentResultWhereUniqueInput {
+  id: Int
+  AND: [TournamentResultWhereInput!]
+  OR: [TournamentResultWhereInput!]
+  NOT: [TournamentResultWhereInput!]
+  tournamentId: IntFilter
+  seasonId: IntFilter
+  clubId: IntFilter
+  position: IntFilter
+  ownerId: IntFilter
+  isInactive: BoolFilter
+  isPrizeEligible: BoolFilter
+  createdAt: DateTimeFilter
+  tournament: TournamentRelationFilter
+  season: SeasonRelationFilter
+  club: ClubRelationFilter
+  owner: OwnerRelationFilter
+  PrizeAssignment: PrizeAssignmentListRelationFilter
+}
+
+enum TournamentResultScalarFieldEnum {
+  id
+  tournamentId
+  seasonId
+  clubId
+  position
+  ownerId
+  isInactive
+  isPrizeEligible
+  createdAt
+}
+
+type ClubPlayerRecord {
+  playerName: String!
+  playerId: String!
+  numGames: Float!
+  total: Float!
+  clubName: String!
+  clubId: Float!
+}
+
+input PrizeClaimWhereUniqueInput {
+  id: Int
+  ownerId_seasonId_contractAddress: PrizeClaimOwnerIdSeasonIdContractAddressCompoundUniqueInput
+  AND: [PrizeClaimWhereInput!]
+  OR: [PrizeClaimWhereInput!]
+  NOT: [PrizeClaimWhereInput!]
+  ownerId: IntFilter
+  seasonId: IntFilter
+  contractAddress: StringFilter
+  claimValue: StringFilter
+  merkleRoot: StringNullableFilter
+  status: EnumPrizeClaimStatusFilter
+  expiresAtRealTimestamp: FloatNullableFilter
+  createdAt: DateTimeFilter
+  updatedAt: DateTimeFilter
+  Owner: OwnerRelationFilter
+  PrizeAssignment: PrizeAssignmentListRelationFilter
+  Season: SeasonRelationFilter
+}
+
+input PrizeClaimOwnerIdSeasonIdContractAddressCompoundUniqueInput {
+  ownerId: Int!
+  seasonId: Int!
+  contractAddress: String!
+}
+
+enum PrizeClaimScalarFieldEnum {
+  id
+  ownerId
+  seasonId
+  contractAddress
+  claimValue
+  merkleRoot
+  status
+  expiresAtRealTimestamp
+  createdAt
+  updatedAt
+}
+
+type ClubBadge {
+  id: Int!
+  data: JSON!
+  club(where: ClubWhereInput): Club
+}
+
+type Stadium {
+  id: Int!
+  name: String!
+  capacity: Int!
+  _count: StadiumCount
+  club(where: ClubWhereInput, orderBy: [ClubOrderByWithRelationInput!], cursor: ClubWhereUniqueInput, take: Int, skip: Int, distinct: [ClubScalarFieldEnum!]): [Club!]!
+  stadiumStand(where: StadiumStandWhereInput, orderBy: [StadiumStandOrderByWithRelationInput!], cursor: StadiumStandWhereUniqueInput, take: Int, skip: Int, distinct: [StadiumStandScalarFieldEnum!]): [StadiumStand!]!
+  pitchUri: String
+}
+
+type StadiumCount {
+  club(where: ClubWhereInput): Int!
+  stadiumStand(where: StadiumStandWhereInput): Int!
+}
+
+type StadiumStand {
+  id: Int!
+  capacity: Int!
+  side: StadiumStandSide!
+  size: StadiumStandSize!
+  style: StadiumStandStyle!
+  variant: Int!
+  colours: JSON!
+  stadiumId: Int!
+  stadium: Stadium!
+  uri: String
+}
+
+input StadiumStandOrderByWithRelationInput {
+  id: SortOrder
+  capacity: SortOrder
+  side: SortOrder
+  size: SortOrder
+  style: SortOrder
+  variant: SortOrder
+  colours: SortOrder
+  stadiumId: SortOrder
+  stadium: StadiumOrderByWithRelationInput
+}
+
+input StadiumStandWhereUniqueInput {
+  id: Int
+  AND: [StadiumStandWhereInput!]
+  OR: [StadiumStandWhereInput!]
+  NOT: [StadiumStandWhereInput!]
+  capacity: IntFilter
+  side: EnumStadiumStandSideFilter
+  size: EnumStadiumStandSizeFilter
+  style: EnumStadiumStandStyleFilter
+  variant: IntFilter
+  colours: JsonFilter
+  stadiumId: IntFilter
+  stadium: StadiumRelationFilter
+}
+
+enum StadiumStandScalarFieldEnum {
+  id
+  capacity
+  side
+  size
+  style
+  variant
+  colours
+  stadiumId
+}
+
+type Kit {
+  id: Int!
+  clubId: Int!
+  kitType: String!
+  data: JSON!
+  club: Club!
+}
+
+input KitOrderByWithRelationInput {
+  id: SortOrder
+  clubId: SortOrder
+  kitType: SortOrder
+  data: SortOrder
+  club: ClubOrderByWithRelationInput
+}
+
+input KitWhereUniqueInput {
+  id: Int
+  AND: [KitWhereInput!]
+  OR: [KitWhereInput!]
+  NOT: [KitWhereInput!]
+  clubId: IntFilter
+  kitType: StringFilter
+  data: JsonFilter
+  club: ClubRelationFilter
+}
+
+enum KitScalarFieldEnum {
+  id
+  clubId
+  kitType
+  data
+}
+
+type Action {
+  id: Int!
+  type: String!
+  timestamp: Float!
+  data: JSON!
+  realWorldTimestamp: Float!
+  _count: ActionCount
+}
+
+type ActionCount {
+  clubs(where: ClubWhereInput): Int!
+  players(where: PlayerWhereInput): Int!
+  ethereumEvents(where: EthereumEventWhereInput): Int!
+}
+
+input ActionOrderByWithRelationInput {
+  id: SortOrder
+  type: SortOrder
+  timestamp: SortOrder
+  data: SortOrder
+  realWorldTimestamp: SortOrder
+  clubs: ClubOrderByRelationAggregateInput
+  players: PlayerOrderByRelationAggregateInput
+  ethereumEvents: EthereumEventOrderByRelationAggregateInput
+}
+
+input EthereumEventOrderByRelationAggregateInput {
+  _count: SortOrder
+}
+
+input ActionWhereUniqueInput {
+  id: Int
+  AND: [ActionWhereInput!]
+  OR: [ActionWhereInput!]
+  NOT: [ActionWhereInput!]
+  type: StringFilter
+  timestamp: FloatFilter
+  data: JsonFilter
+  realWorldTimestamp: FloatFilter
+  clubs: ClubListRelationFilter
+  players: PlayerListRelationFilter
+  ethereumEvents: EthereumEventListRelationFilter
+}
+
+enum ActionScalarFieldEnum {
+  id
+  type
+  timestamp
+  data
+  realWorldTimestamp
+}
+
+input LineupWhereUniqueInput {
+  id: Int
+  tacticsId: Int
+  AND: [LineupWhereInput!]
+  OR: [LineupWhereInput!]
+  NOT: [LineupWhereInput!]
+  clubId: IntFilter
+  isSelected: BoolFilter
+  club: ClubRelationFilter
+  tactics: TacticsRelationFilter
+  playerLineups: PlayerLineupListRelationFilter
+}
+
+enum LineupScalarFieldEnum {
+  id
+  clubId
+  isSelected
+  tacticsId
+}
+
+input ClubStatsWhereUniqueInput {
+  id: Int
+  AND: [ClubStatsWhereInput!]
+  OR: [ClubStatsWhereInput!]
+  NOT: [ClubStatsWhereInput!]
+  clubId: IntFilter
+  games: IntFilter
+  wins: IntFilter
+  draws: IntFilter
+  losses: IntFilter
+  points: IntFilter
+  possession: FloatFilter
+  assists: IntFilter
+  goals: IntFilter
+  goalsAgainst: IntFilter
+  shotsOnTarget: IntFilter
+  shotsOffTarget: IntFilter
+  passes: IntFilter
+  yellowCards: IntFilter
+  redCards: IntFilter
+  corners: IntFilter
+  possessionWon: IntFilter
+  gkSaves: IntFilter
+  fouls: IntFilter
+  freeKicks: IntFilter
+  offsides: IntFilter
+  freeKicksScored: IntFilter
+  crosses: IntFilter
+  attemptedPasses: IntFilter
+  blocks: IntFilter
+  consecutivePreGameLineupSet: IntFilter
+  consecutiveInGameLineupSet: IntFilter
+  consecutiveNotMakingPreGameLineupSet: IntFilter
+  consecutiveNotMakingInGameLineupSet: IntFilter
+  lastPreGameLineupSetTimestamp: FloatFilter
+  lastInGameLineupSetTimestamp: FloatFilter
+  shotsBlocked: IntFilter
+  totalShots: IntFilter
+  shotsFromInsideTheBox: IntFilter
+  normalShots: IntFilter
+  backHeelShots: IntFilter
+  divingHeaderShots: IntFilter
+  halfVolleyShots: IntFilter
+  volleyShots: IntFilter
+  lobShots: IntFilter
+  overheadKickShots: IntFilter
+  completedPasses: IntFilter
+  interceptedPasses: IntFilter
+  groundPasses: IntFilter
+  offsidePasses: IntFilter
+  tacklesExecuted: IntFilter
+  tacklesReceived: IntFilter
+  clearances: IntFilter
+  interceptions: IntFilter
+  failedInterceptions: IntFilter
+  fiftyFiftiesWon: IntFilter
+  fiftyFiftiesLost: IntFilter
+  duelsWon: IntFilter
+  duelsLost: IntFilter
+  attemptedDribbles: IntFilter
+  completedDribbles: IntFilter
+  carries: IntFilter
+  possessionInfo: JsonFilter
+  penaltiesWon: IntFilter
+  penaltiesConceded: IntFilter
+  penaltiesScored: IntFilter
+  penaltiesMissed: IntFilter
+  penaltiesSaved: IntFilter
+  club: ClubRelationFilter
+  clubTournament: ClubTournamentNullableRelationFilter
+  clubFixture: ClubFixtureNullableRelationFilter
+}
+
+enum ClubStatsScalarFieldEnum {
+  id
+  clubId
+  games
+  wins
+  draws
+  losses
+  points
+  possession
+  assists
+  goals
+  goalsAgainst
+  shotsOnTarget
+  shotsOffTarget
+  passes
+  yellowCards
+  redCards
+  corners
+  possessionWon
+  gkSaves
+  fouls
+  freeKicks
+  offsides
+  freeKicksScored
+  crosses
+  attemptedPasses
+  blocks
+  consecutivePreGameLineupSet
+  consecutiveInGameLineupSet
+  consecutiveNotMakingPreGameLineupSet
+  consecutiveNotMakingInGameLineupSet
+  lastPreGameLineupSetTimestamp
+  lastInGameLineupSetTimestamp
+  shotsBlocked
+  totalShots
+  shotsFromInsideTheBox
+  normalShots
+  backHeelShots
+  divingHeaderShots
+  halfVolleyShots
+  volleyShots
+  lobShots
+  overheadKickShots
+  completedPasses
+  interceptedPasses
+  groundPasses
+  offsidePasses
+  tacklesExecuted
+  tacklesReceived
+  clearances
+  interceptions
+  failedInterceptions
+  fiftyFiftiesWon
+  fiftyFiftiesLost
+  duelsWon
+  duelsLost
+  attemptedDribbles
+  completedDribbles
+  carries
+  possessionInfo
+  penaltiesWon
+  penaltiesConceded
+  penaltiesScored
+  penaltiesMissed
+  penaltiesSaved
+}
+
+type TrainingSlot {
+  id: Int!
+  clubId: Int!
+  baseDuration: Int!
+  growthFactor: Int!
+  conditionCost: Int!
+  trainablePositions: [String!]!
+  playerId: String
+  expiryTime: Float
+  position: String
+  isComplete: Boolean!
+  club: Club!
+  player(where: PlayerWhereInput): Player
+}
+
+input TrainingSlotOrderByWithRelationInput {
+  id: SortOrder
+  clubId: SortOrder
+  baseDuration: SortOrder
+  growthFactor: SortOrder
+  conditionCost: SortOrder
+  trainablePositions: SortOrder
+  playerId: SortOrderInput
+  expiryTime: SortOrderInput
+  position: SortOrderInput
+  isComplete: SortOrder
+  club: ClubOrderByWithRelationInput
+  player: PlayerOrderByWithRelationInput
+}
+
+input TrainingSlotWhereUniqueInput {
+  id: Int
+  playerId: String
+  AND: [TrainingSlotWhereInput!]
+  OR: [TrainingSlotWhereInput!]
+  NOT: [TrainingSlotWhereInput!]
+  clubId: IntFilter
+  baseDuration: IntFilter
+  growthFactor: IntFilter
+  conditionCost: IntFilter
+  trainablePositions: StringNullableListFilter
+  expiryTime: FloatNullableFilter
+  position: StringNullableFilter
+  isComplete: BoolFilter
+  club: ClubRelationFilter
+  player: PlayerNullableRelationFilter
+}
+
+enum TrainingSlotScalarFieldEnum {
+  id
+  clubId
+  baseDuration
+  growthFactor
+  conditionCost
+  trainablePositions
+  playerId
+  expiryTime
+  position
+  isComplete
+}
+
+type PlayerRegistration {
+  id: Int!
+  playerId: String!
+  clubId: Int
+  registrationWindowId: Int!
+  registeredAtRealTimestamp: Float!
+  expiredAtRealTimestamp: Float
+  flaggedToExpire: Boolean!
+  _count: PlayerRegistrationCount
+  player: Player!
+  club(where: ClubWhereInput): Club
+  playerRegistrationRecord(where: PlayerRegistrationPlayerRecordWhereInput, orderBy: [PlayerRegistrationPlayerRecordOrderByWithRelationInput!], cursor: PlayerRegistrationPlayerRecordWhereUniqueInput, take: Int, skip: Int, distinct: [PlayerRegistrationPlayerRecordScalarFieldEnum!]): [PlayerRegistrationPlayerRecord!]!
+  registrationWindow: RegistrationWindow!
+}
+
+type PlayerRegistrationCount {
+  playerRegistrationRecord(where: PlayerRegistrationPlayerRecordWhereInput): Int!
+}
+
+type PlayerRegistrationPlayerRecord {
+  id: Int!
+  playerRegistrationId: Int!
+  seasonId: Int!
+  appearances: Int!
+  goalsScored: Int!
+  sessionsTrained: Int!
+}
+
+input PlayerRegistrationPlayerRecordOrderByWithRelationInput {
+  id: SortOrder
+  playerRegistrationId: SortOrder
+  seasonId: SortOrder
+  appearances: SortOrder
+  goalsScored: SortOrder
+  sessionsTrained: SortOrder
+  playerRegistration: PlayerRegistrationOrderByWithRelationInput
+  season: SeasonOrderByWithRelationInput
+}
+
+input PlayerRegistrationOrderByWithRelationInput {
+  id: SortOrder
+  playerId: SortOrder
+  clubId: SortOrderInput
+  registrationWindowId: SortOrder
+  registeredAtRealTimestamp: SortOrder
+  expiredAtRealTimestamp: SortOrderInput
+  flaggedToExpire: SortOrder
+  player: PlayerOrderByWithRelationInput
+  club: ClubOrderByWithRelationInput
+  playerRegistrationRecord: PlayerRegistrationPlayerRecordOrderByRelationAggregateInput
+  registrationWindow: RegistrationWindowOrderByWithRelationInput
+}
+
+input RegistrationWindowOrderByWithRelationInput {
+  id: SortOrder
+  seasonId: SortOrder
+  openingRealTimestamp: SortOrder
+  closingRealTimestamp: SortOrderInput
+  unregistrationsAllowed: SortOrderInput
+  registrationWindowState: SortOrder
+  shouldReturnUnownedPlayers: SortOrder
+  season: SeasonOrderByWithRelationInput
+  PlayerRegistration: PlayerRegistrationOrderByRelationAggregateInput
+}
+
+input PlayerRegistrationPlayerRecordWhereUniqueInput {
+  id: Int
+  cst_PlayerRegistrationPlayerRecord_seasonId_playerRegistrationId: PlayerRegistrationPlayerRecordCst_PlayerRegistrationPlayerRecord_seasonId_playerRegistrationIdCompoundUniqueInput
+  AND: [PlayerRegistrationPlayerRecordWhereInput!]
+  OR: [PlayerRegistrationPlayerRecordWhereInput!]
+  NOT: [PlayerRegistrationPlayerRecordWhereInput!]
+  playerRegistrationId: IntFilter
+  seasonId: IntFilter
+  appearances: IntFilter
+  goalsScored: IntFilter
+  sessionsTrained: IntFilter
+  playerRegistration: PlayerRegistrationRelationFilter
+  season: SeasonRelationFilter
+}
+
+input PlayerRegistrationPlayerRecordCst_PlayerRegistrationPlayerRecord_seasonId_playerRegistrationIdCompoundUniqueInput {
+  seasonId: Int!
+  playerRegistrationId: Int!
+}
+
+enum PlayerRegistrationPlayerRecordScalarFieldEnum {
+  id
+  playerRegistrationId
+  seasonId
+  appearances
+  goalsScored
+  sessionsTrained
+}
+
+type RegistrationWindow {
+  id: Int!
+  seasonId: Int!
+  openingRealTimestamp: Float!
+  closingRealTimestamp: Float
+  unregistrationsAllowed: Int
+  registrationWindowState: RegistrationWindowState!
+  shouldReturnUnownedPlayers: Boolean!
+  _count: RegistrationWindowCount
+  season: Season!
+  PlayerRegistration(where: PlayerRegistrationWhereInput, orderBy: [PlayerRegistrationOrderByWithRelationInput!], cursor: PlayerRegistrationWhereUniqueInput, take: Int, skip: Int, distinct: [PlayerRegistrationScalarFieldEnum!]): [PlayerRegistration!]!
+}
+
+type RegistrationWindowCount {
+  PlayerRegistration(where: PlayerRegistrationWhereInput): Int!
+}
+
+input PlayerRegistrationWhereUniqueInput {
+  id: Int
+  AND: [PlayerRegistrationWhereInput!]
+  OR: [PlayerRegistrationWhereInput!]
+  NOT: [PlayerRegistrationWhereInput!]
+  playerId: StringFilter
+  clubId: IntNullableFilter
+  registrationWindowId: IntFilter
+  registeredAtRealTimestamp: FloatFilter
+  expiredAtRealTimestamp: FloatNullableFilter
+  flaggedToExpire: BoolFilter
+  player: PlayerRelationFilter
+  club: ClubNullableRelationFilter
+  playerRegistrationRecord: PlayerRegistrationPlayerRecordListRelationFilter
+  registrationWindow: RegistrationWindowRelationFilter
+}
+
+enum PlayerRegistrationScalarFieldEnum {
+  id
+  playerId
+  clubId
+  registrationWindowId
+  registeredAtRealTimestamp
+  expiredAtRealTimestamp
+  flaggedToExpire
+}
+
+input AvailableHomeGameTimeWhereUniqueInput {
+  id: Int
+  AND: [AvailableHomeGameTimeWhereInput!]
+  OR: [AvailableHomeGameTimeWhereInput!]
+  NOT: [AvailableHomeGameTimeWhereInput!]
+  realWorldGameTime: StringFilter
+  homeGameTime: FloatFilter
+  Club: ClubListRelationFilter
+}
+
+enum AvailableHomeGameTimeScalarFieldEnum {
+  id
+  realWorldGameTime
+  homeGameTime
+}
+
+input ClubBadgeWhereUniqueInput {
+  id: Int
+  AND: [ClubBadgeWhereInput!]
+  OR: [ClubBadgeWhereInput!]
+  NOT: [ClubBadgeWhereInput!]
+  data: JsonFilter
+  club: ClubNullableRelationFilter
+}
+
+enum ClubBadgeScalarFieldEnum {
+  id
+  data
+}
+
+input DivisionWhereUniqueInput {
+  id: Int
+  AND: [DivisionWhereInput!]
+  OR: [DivisionWhereInput!]
+  NOT: [DivisionWhereInput!]
+  name: StringFilter
+  tier: IntFilter
+  competitions: CompetitionListRelationFilter
+  Prize: PrizeListRelationFilter
+}
+
+enum DivisionScalarFieldEnum {
+  id
+  name
+  tier
+}
+
+type AggregateFixture {
+  _count: FixtureCountAggregate
+  _avg: FixtureAvgAggregate
+  _sum: FixtureSumAggregate
+  _min: FixtureMinAggregate
+  _max: FixtureMaxAggregate
+}
+
+type FixtureCountAggregate {
+  id: Int!
+  date: Int!
+  seed: Int!
+  isNeutralVenue: Int!
+  matchId: Int!
+  roundIndex: Int!
+  fixtureIndex: Int!
+  tournamentId: Int!
+  state: Int!
+  realWorldTimestamp: Int!
+  inGameTimestamp: Int!
+  _all: Int!
+}
+
+type FixtureAvgAggregate {
+  id: Float
+  date: Float
+  roundIndex: Float
+  fixtureIndex: Float
+  tournamentId: Float
+  realWorldTimestamp: Float
+  inGameTimestamp: Float
+}
+
+type FixtureSumAggregate {
+  id: Int
+  date: Float
+  roundIndex: Int
+  fixtureIndex: Int
+  tournamentId: Int
+  realWorldTimestamp: Float
+  inGameTimestamp: Float
+}
+
+type FixtureMinAggregate {
+  id: Int
+  date: Float
+  seed: String
+  isNeutralVenue: Boolean
+  matchId: String
+  roundIndex: Int
+  fixtureIndex: Int
+  tournamentId: Int
+  state: String
+  realWorldTimestamp: Float
+  inGameTimestamp: Float
+}
+
+type FixtureMaxAggregate {
+  id: Int
+  date: Float
+  seed: String
+  isNeutralVenue: Boolean
+  matchId: String
+  roundIndex: Int
+  fixtureIndex: Int
+  tournamentId: Int
+  state: String
+  realWorldTimestamp: Float
+  inGameTimestamp: Float
+}
+
+input FormationWhereUniqueInput {
+  id: Int
+  AND: [FormationWhereInput!]
+  OR: [FormationWhereInput!]
+  NOT: [FormationWhereInput!]
+  name: StringFilter
+  tactics: TacticsListRelationFilter
+  slots: FormationSlotListRelationFilter
+}
+
+enum FormationScalarFieldEnum {
+  id
+  name
+}
+
+input MatchWhereUniqueInput {
+  id: String
+  AND: [MatchWhereInput!]
+  OR: [MatchWhereInput!]
+  NOT: [MatchWhereInput!]
+  seed: StringFilter
+  startTimestamp: FloatFilter
+  initialParams: JsonFilter
+  homeTeam: JsonFilter
+  awayTeam: JsonFilter
+  players: JsonFilter
+  penaltyShootoutState: JsonFilter
+  state: IntFilter
+  possessionClubId: IntFilter
+  lastTeamToTouchBall: IntFilter
+  possessionPlayerId: StringNullableFilter
+  ballLocation: JsonFilter
+  underPressure: BoolFilter
+  frames: JsonFilter
+  periodStates: JsonFilter
+  grid: JsonFilter
+  isResultProcessed: BoolFilter
+  timestamp: FloatFilter
+  keyEvents: JsonFilter
+  activeEvents: JsonFilter
+  referee: JsonFilter
+  pendingTacticalChanges: JsonFilter
+  pendingAdminChanges: JsonFilter
+  possessionIntervalMinutes: IntNullableListFilter
+  possessionIntervalMinutesCompleted: JsonFilter
+  digest: StringFilter
+  ratingsSummary: JsonFilter
+  fixture: FixtureNullableRelationFilter
+  matchChanges: MatchChangeListRelationFilter
+}
+
+enum MatchScalarFieldEnum {
+  id
+  seed
+  startTimestamp
+  initialParams
+  homeTeam
+  awayTeam
+  players
+  penaltyShootoutState
+  state
+  possessionClubId
+  lastTeamToTouchBall
+  possessionPlayerId
+  ballLocation
+  underPressure
+  frames
+  periodStates
+  grid
+  isResultProcessed
+  timestamp
+  keyEvents
+  activeEvents
+  referee
+  pendingTacticalChanges
+  pendingAdminChanges
+  possessionIntervalMinutes
+  possessionIntervalMinutesCompleted
+  digest
+  ratingsSummary
+}
+
+type MatchConfiguration {
+  id: Int!
+  performanceModifiers: JSON!
+  cardProbabilities: JSON!
+  features: JSON
+}
+
+input MatchConfigurationWhereInput {
+  AND: [MatchConfigurationWhereInput!]
+  OR: [MatchConfigurationWhereInput!]
+  NOT: [MatchConfigurationWhereInput!]
+  id: IntFilter
+  performanceModifiers: JsonFilter
+  cardProbabilities: JsonFilter
+  features: JsonNullableFilter
+}
+
+input JsonNullableFilter {
+  equals: JSON
+  path: [String!]
+  string_contains: String
+  string_starts_with: String
+  string_ends_with: String
+  array_contains: JSON
+  array_starts_with: JSON
+  array_ends_with: JSON
+  lt: JSON
+  lte: JSON
+  gt: JSON
+  gte: JSON
+  not: JSON
+}
+
+input MatchConfigurationOrderByWithRelationInput {
+  id: SortOrder
+  performanceModifiers: SortOrder
+  cardProbabilities: SortOrder
+  features: SortOrderInput
+}
+
+input MatchConfigurationWhereUniqueInput {
+  id: Int
+  AND: [MatchConfigurationWhereInput!]
+  OR: [MatchConfigurationWhereInput!]
+  NOT: [MatchConfigurationWhereInput!]
+  performanceModifiers: JsonFilter
+  cardProbabilities: JsonFilter
+  features: JsonNullableFilter
+}
+
+enum MatchConfigurationScalarFieldEnum {
+  id
+  performanceModifiers
+  cardProbabilities
+  features
+}
+
+type MerkleRoot {
+  id: Int!
+  root: String!
+  timestamp: Float!
+}
+
+input MerkleRootWhereInput {
+  AND: [MerkleRootWhereInput!]
+  OR: [MerkleRootWhereInput!]
+  NOT: [MerkleRootWhereInput!]
+  id: IntFilter
+  root: StringFilter
+  timestamp: FloatFilter
+}
+
+input MerkleRootOrderByWithRelationInput {
+  id: SortOrder
+  root: SortOrder
+  timestamp: SortOrder
+}
+
+input MerkleRootWhereUniqueInput {
+  id: Int
+  AND: [MerkleRootWhereInput!]
+  OR: [MerkleRootWhereInput!]
+  NOT: [MerkleRootWhereInput!]
+  root: StringFilter
+  timestamp: FloatFilter
+}
+
+enum MerkleRootScalarFieldEnum {
+  id
+  root
+  timestamp
+}
+
+type Metadata {
+  id: Int!
+  currentSeasonId: Int
+  seasonState: SeasonState
+  seed: String!
+  currentTimestamp: Float!
+  currentRealTimestamp: Float!
+  lastActionTimestamp: Float!
+  lastActionRealTimestamp: Float!
+  startTimestamp: Float!
+  timeline: JSON
+}
+
+input MetadataWhereInput {
+  AND: [MetadataWhereInput!]
+  OR: [MetadataWhereInput!]
+  NOT: [MetadataWhereInput!]
+  id: IntFilter
+  currentSeasonId: IntNullableFilter
+  seasonState: EnumSeasonStateNullableFilter
+  seed: StringFilter
+  currentTimestamp: FloatFilter
+  currentRealTimestamp: FloatFilter
+  lastActionTimestamp: FloatFilter
+  lastActionRealTimestamp: FloatFilter
+  startTimestamp: FloatFilter
+  timeline: JsonNullableFilter
+}
+
+input EnumSeasonStateNullableFilter {
+  equals: SeasonState
+  in: [SeasonState!]
+  notIn: [SeasonState!]
+  not: NestedEnumSeasonStateNullableFilter
+}
+
+input NestedEnumSeasonStateNullableFilter {
+  equals: SeasonState
+  in: [SeasonState!]
+  notIn: [SeasonState!]
+  not: NestedEnumSeasonStateNullableFilter
+}
+
+input MetadataOrderByWithRelationInput {
+  id: SortOrder
+  currentSeasonId: SortOrderInput
+  seasonState: SortOrderInput
+  seed: SortOrder
+  currentTimestamp: SortOrder
+  currentRealTimestamp: SortOrder
+  lastActionTimestamp: SortOrder
+  lastActionRealTimestamp: SortOrder
+  startTimestamp: SortOrder
+  timeline: SortOrderInput
+}
+
+input MetadataWhereUniqueInput {
+  id: Int
+  AND: [MetadataWhereInput!]
+  OR: [MetadataWhereInput!]
+  NOT: [MetadataWhereInput!]
+  currentSeasonId: IntNullableFilter
+  seasonState: EnumSeasonStateNullableFilter
+  seed: StringFilter
+  currentTimestamp: FloatFilter
+  currentRealTimestamp: FloatFilter
+  lastActionTimestamp: FloatFilter
+  lastActionRealTimestamp: FloatFilter
+  startTimestamp: FloatFilter
+  timeline: JsonNullableFilter
+}
+
+enum MetadataScalarFieldEnum {
+  id
+  currentSeasonId
+  seasonState
+  seed
+  currentTimestamp
+  currentRealTimestamp
+  lastActionTimestamp
+  lastActionRealTimestamp
+  startTimestamp
+  timeline
+}
+
+input OwnerWhereUniqueInput {
+  id: Int
+  address: String
+  AND: [OwnerWhereInput!]
+  OR: [OwnerWhereInput!]
+  NOT: [OwnerWhereInput!]
+  isAdmin: BoolFilter
+  clubs: ClubListRelationFilter
+  players: PlayerListRelationFilter
+  TournamentResult: TournamentResultListRelationFilter
+  PrizeClaim: PrizeClaimListRelationFilter
+}
+
+enum OwnerScalarFieldEnum {
+  id
+  address
+  isAdmin
+}
+
+input RegistrationWindowWhereUniqueInput {
+  id: Int
+  AND: [RegistrationWindowWhereInput!]
+  OR: [RegistrationWindowWhereInput!]
+  NOT: [RegistrationWindowWhereInput!]
+  seasonId: IntFilter
+  openingRealTimestamp: FloatFilter
+  closingRealTimestamp: FloatNullableFilter
+  unregistrationsAllowed: IntNullableFilter
+  registrationWindowState: EnumRegistrationWindowStateFilter
+  shouldReturnUnownedPlayers: BoolFilter
+  season: SeasonRelationFilter
+  PlayerRegistration: PlayerRegistrationListRelationFilter
+}
+
+enum RegistrationWindowScalarFieldEnum {
+  id
+  seasonId
+  openingRealTimestamp
+  closingRealTimestamp
+  unregistrationsAllowed
+  registrationWindowState
+  shouldReturnUnownedPlayers
+}
+
+input SeasonWhereUniqueInput {
+  id: Int
+  AND: [SeasonWhereInput!]
+  OR: [SeasonWhereInput!]
+  NOT: [SeasonWhereInput!]
+  name: StringFilter
+  state: EnumSeasonStateFilter
+  startTimestamp: FloatNullableFilter
+  preSeasonStartedAt: FloatNullableFilter
+  endTimestamp: FloatNullableFilter
+  fixtureScheduleRealTimestamp: FloatNullableFilter
+  academyExpireAtRealTimestamp: FloatNullableFilter
+  tournamentCompleteAtRealTimestamp: FloatNullableFilter
+  numTeamsPromoted: IntFilter
+  players: PlayerListRelationFilter
+  tournaments: TournamentListRelationFilter
+  playerRegistrationPlayerRecords: PlayerRegistrationPlayerRecordListRelationFilter
+  TournamentResult: TournamentResultListRelationFilter
+  PlayerAttributes: PlayerAttributesListRelationFilter
+  RegistrationWindow: RegistrationWindowListRelationFilter
+  Prize: PrizeListRelationFilter
+  PrizeClaim: PrizeClaimListRelationFilter
+}
+
+enum SeasonScalarFieldEnum {
+  id
+  name
+  state
+  startTimestamp
+  preSeasonStartedAt
+  endTimestamp
+  fixtureScheduleRealTimestamp
+  academyExpireAtRealTimestamp
+  tournamentCompleteAtRealTimestamp
+  numTeamsPromoted
+}
+
+input StadiumWhereUniqueInput {
+  id: Int
+  AND: [StadiumWhereInput!]
+  OR: [StadiumWhereInput!]
+  NOT: [StadiumWhereInput!]
+  name: StringFilter
+  capacity: IntFilter
+  club: ClubListRelationFilter
+  stadiumStand: StadiumStandListRelationFilter
+}
+
+enum StadiumScalarFieldEnum {
+  id
+  name
+  capacity
+}
+
+type ServerMetadata {
+  timestamp: Float!
+  gameTimestamp: Float!
+}
+
+type GameState {
+  currentSeasonId: Int!
+  seasonState: SeasonState!
+}
+
+type LeaguePromotionRelegation {
+  numberOfPromotedClubs: Float!
+  numberOfRelegatedClubs: Float!
+}
+
+type BasicClubInfo {
+  id: Float!
+  name: String!
+  isInactive: Boolean!
+  tournamentName: String!
+}
+
+type PrizeStructure {
+  prize: PrizeInfo!
+  competitionStructure: [String!]!
+  entryStructure: [EntryStructureType!]!
+}
+
+type PrizeInfo {
+  id: Int!
+  type: PrizeType!
+  description: String
+  value: String
+}
+
+type EntryStructureType {
+  position: Int!
+  payoutPercent: Float!
+  payoutPrize: String!
+}
+
+type RegistrationWindowUpdate {
+  updateTimestamp: Float
+  updateType: String!
+}
+
+type ConfigValueOutput {
+  key: String!
+  value: String
+}
+
+type EthereumEvent {
+  id: Int!
+  blockNumber: Int!
+  transactionHash: String!
+  event: JSON!
+  _count: EthereumEventCount
+}
+
+type EthereumEventCount {
+  actions(where: ActionWhereInput): Int!
+}
+
+input EthereumEventOrderByWithRelationInput {
+  id: SortOrder
+  blockNumber: SortOrder
+  transactionHash: SortOrder
+  event: SortOrder
+  actions: ActionOrderByRelationAggregateInput
+}
+
+input EthereumEventWhereUniqueInput {
+  id: Int
+  AND: [EthereumEventWhereInput!]
+  OR: [EthereumEventWhereInput!]
+  NOT: [EthereumEventWhereInput!]
+  blockNumber: IntFilter
+  transactionHash: StringFilter
+  event: JsonFilter
+  actions: ActionListRelationFilter
+}
+
+enum EthereumEventScalarFieldEnum {
+  id
+  blockNumber
+  transactionHash
+  event
+}
+
+type AmateurClub {
+  id: Float!
+  clubName: String!
+  appliedToRejoinAt: Float
+}
+
+type ClubFlaggedForRemoval {
+  id: Float!
+  clubName: String!
+  tournamentName: String!
+  position: Float!
+}
+
+type Mutation {
+  submitAction(address: String!, signature: String!, action: String!): SubmittedActionResponseType!
+}
+
+type SubmittedActionResponseType {
+  code: Int!
+  error: String
+  message: String!
+}
